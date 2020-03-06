@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ubuntu on Aaron Zhou</title>
+    <link>https://aarzho.github.io/tags/ubuntu/</link>
+    <description>Recent content in ubuntu on Aaron Zhou</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>aarzho@gmail.com (Aaron Zhou)</managingEditor>
+    <webMaster>aarzho@gmail.com (Aaron Zhou)</webMaster>
+    <lastBuildDate>Sun, 06 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://aarzho.github.io/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Leveraging Upstart for User Jobs</title>
+      <link>https://aarzho.github.io/post/leveraging-upstart-for-user-jobs/</link>
+      <pubDate>Sun, 06 Jan 2019 00:00:00 +0000</pubDate>
+      <author>aarzho@gmail.com (Aaron Zhou)</author>
+      <guid>https://aarzho.github.io/post/leveraging-upstart-for-user-jobs/</guid>
+      <description>Ubuntu and Upstart A while back Ubuntu switched from the classic bash script disaster know as SysV to upstart. I won&amp;rsquo;t even get started on how terrible SysV was, but it was pretty bad as it was all shell scripts, no dependencies, no events, no parallelization, no integrated process monitoring, cgroups, etc.
+I&amp;rsquo;ve used systemd before both in Fedora and embedded systems based around openembedded and loved it. It seems more natural and powerful then upstart.</description>
+    </item>
+    
+  </channel>
+</rss>

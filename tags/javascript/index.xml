@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on Aaron Zhou</title>
+    <link>https://aarzho.github.io/tags/javascript/</link>
+    <description>Recent content in JavaScript on Aaron Zhou</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>aarzho@gmail.com (Aaron Zhou)</managingEditor>
+    <webMaster>aarzho@gmail.com (Aaron Zhou)</webMaster>
+    <lastBuildDate>Mon, 12 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://aarzho.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Beyond Minimum Viable Product: A Lesson on Building Production-ready Software</title>
+      <link>https://aarzho.github.io/post/beyond-minimum-viable-product-a-lesson-on-building-production-ready-software/</link>
+      <pubDate>Mon, 12 Aug 2019 00:00:00 +0000</pubDate>
+      <author>aarzho@gmail.com (Aaron Zhou)</author>
+      <guid>https://aarzho.github.io/post/beyond-minimum-viable-product-a-lesson-on-building-production-ready-software/</guid>
+      <description>&lt;p&gt;What I learned working at a mature startup that&amp;rsquo;s building new things but also has a ton of customers and products in production.&lt;/p&gt;
+&lt;p&gt;This post is a WIP.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Effective Unit Testing of React Components With Jest And Enzyme</title>
+      <link>https://aarzho.github.io/post/effective-unit-testing-of-react-components-with-jest-and-enzyme/</link>
+      <pubDate>Sun, 11 Aug 2019 00:00:00 +0000</pubDate>
+      <author>aarzho@gmail.com (Aaron Zhou)</author>
+      <guid>https://aarzho.github.io/post/effective-unit-testing-of-react-components-with-jest-and-enzyme/</guid>
+      <description>&lt;p&gt;The purpose of this article is to (1) provide a high level discussion of testing and (2) offer some practical examples and best practice for writing automated unit tests for React Application using Jest and Enzyme.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cribsheet for JavaScript Coding Interview</title>
+      <link>https://aarzho.github.io/post/cribsheet-for-javascript-coding-interview/</link>
+      <pubDate>Thu, 25 Oct 2018 00:00:00 +0000</pubDate>
+      <author>aarzho@gmail.com (Aaron Zhou)</author>
+      <guid>https://aarzho.github.io/post/cribsheet-for-javascript-coding-interview/</guid>
+      <description>&lt;p&gt;The coding interviews / coding challenges are designed to assess how productive someone can be with the language. In contrast to the algorithm whiteboarding interview, which assesses how the candidate go about solving a problem, or the architecture design interview, which assesses how the candidate&amp;rsquo;s experience in system engineering and product design, the coding interview is is utilized by the company interviewing you to answer one question:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Can you be productive with JavaScript?&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Data Structure with JavaScript Object: Linked List</title>
+      <link>https://aarzho.github.io/post/data-structure-with-javascript-object-linked-list/</link>
+      <pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate>
+      <author>aarzho@gmail.com (Aaron Zhou)</author>
+      <guid>https://aarzho.github.io/post/data-structure-with-javascript-object-linked-list/</guid>
+      <description>&lt;p&gt;Linked list is like an array but more flexible. Elements in an array are stored contiguously in memory while linked lists are stored as nodes with two fields: current value and a pointer to the next thing in the list. We are going to implement linked list in JavaScript and go over some algorithms with the linked list.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Algos to Practice Whiteboarding for The Coding Interview</title>
+      <link>https://aarzho.github.io/post/algos-to-practice-whiteboarding-for-the-coding-interview/</link>
+      <pubDate>Sun, 13 May 2018 00:00:00 +0000</pubDate>
+      <author>aarzho@gmail.com (Aaron Zhou)</author>
+      <guid>https://aarzho.github.io/post/algos-to-practice-whiteboarding-for-the-coding-interview/</guid>
+      <description>&lt;p&gt;We are going to go over a set of coding and whiteboard problems that would be asked during a coding interview. I&amp;rsquo;m drawing these problems from &lt;a href=&#34;https://leetcode.com/&#34;&gt;LeetCode&lt;/a&gt; and &lt;a href=&#34;https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=pd_lpo_sbs_14_t_0?_encoding=UTF8&amp;amp;psc=1&amp;amp;refRID=2E72V7DJM4CV4DNTBTKD&#34;&gt;Cracking the Coding Interview&lt;/a&gt;. They are a sample of the medium and hard problems that require a bit of thinking and and familiarity with some fundamental data structures in computer science.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Single Page Application For Work</title>
+      <link>https://aarzho.github.io/post/single-page-application-for-work/</link>
+      <pubDate>Wed, 09 May 2018 00:00:00 +0000</pubDate>
+      <author>aarzho@gmail.com (Aaron Zhou)</author>
+      <guid>https://aarzho.github.io/post/single-page-application-for-work/</guid>
+      <description>&lt;p&gt;When I work at my federal job on a close intranet network, we often had to access information from different databases and filesystems through custom or share point websites which did not have the best user interface. It was a pain point for me and many of my colleagues. I decided to make a set of single page applications (SPAs) with nicer UX for querying the databases and file systems.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

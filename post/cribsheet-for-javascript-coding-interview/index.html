@@ -1,0 +1,1530 @@
+
+
+  
+    
+  
+
+
+  
+
+
+
+
+
+  
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Hugo 0.63.2 with theme Tranquilpeak 0.4.3-BETA">
+    <title>Cribsheet for JavaScript Coding Interview</title>
+    <meta name="author" content="Aaron Zhou">
+    <meta name="keywords" content="">
+
+    <link rel="icon" href="https://aarzho.github.io/favicon-96x96.png">
+    
+
+    
+    <meta name="description" content="The coding interviews / coding challenges are designed to assess how productive someone can be with the language. In contrast to the algorithm whiteboarding interview, which assesses how the candidate go about solving a problem, or the architecture design interview, which assesses how the candidate&rsquo;s experience in system engineering and product design, the coding interview is is utilized by the company interviewing you to answer one question:
+
+Can you be productive with JavaScript?
+">
+    <meta property="og:description" content="The coding interviews / coding challenges are designed to assess how productive someone can be with the language. In contrast to the algorithm whiteboarding interview, which assesses how the candidate go about solving a problem, or the architecture design interview, which assesses how the candidate&rsquo;s experience in system engineering and product design, the coding interview is is utilized by the company interviewing you to answer one question:
+
+Can you be productive with JavaScript?
+">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Cribsheet for JavaScript Coding Interview">
+    <meta property="og:url" content="https://aarzho.github.io/post/cribsheet-for-javascript-coding-interview/">
+    <meta property="og:site_name" content="Aaron Zhou">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Aaron Zhou">
+    <meta name="twitter:description" content="The coding interviews / coding challenges are designed to assess how productive someone can be with the language. In contrast to the algorithm whiteboarding interview, which assesses how the candidate go about solving a problem, or the architecture design interview, which assesses how the candidate&rsquo;s experience in system engineering and product design, the coding interview is is utilized by the company interviewing you to answer one question:
+
+Can you be productive with JavaScript?
+">
+    
+    
+
+    
+    
+
+    
+      <meta property="og:image" content="https://aarzho.github.io/post/images/programming/coding-interview.png">
+    
+    
+    
+
+    
+      <meta property="og:image" content="https://aarzho.github.io/images/aaronzhou.jpg">
+    
+
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://aarzho.github.io/css/style-jsjn0006wyhpyzivf6yceb31gvpjatbcs3qzjvlumobfnugccvobqwxnnaj8.min.css" />
+    
+    
+      
+        <link rel="stylesheet"  href="https://aarzho.github.io/css/custom.css">
+      
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://aarzho.github.io/">Aaron Zhou</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://aarzho.github.io/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://aarzho.github.io/images/aaronzhou.jpg" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://aarzho.github.io/#about">
+          <img class="sidebar-profile-picture" src="https://aarzho.github.io/images/aaronzhou.jpg" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Aaron Zhou</h4>
+        
+          <h5 class="sidebar-profile-bio">Firmware Enginner, Ph.D in Controls Engineering, Senior IEEE Member.</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+     
+      <a class="sidebar-button-link " href="https://aarzho.github.io/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+     
+      <a class="sidebar-button-link " href="https://aarzho.github.io/categories/projects">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-code"></i>
+      
+      <span class="sidebar-button-desc">Projects</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+     
+      <a class="sidebar-button-link " href="https://aarzho.github.io/categories/blog">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-pencil"></i>
+      
+      <span class="sidebar-button-desc">Blog</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+     
+      <a class="sidebar-button-link " href="https://aarzho.github.io/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+     
+      <a class="sidebar-button-link " href="https://aarzho.github.io/about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-user"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+     
+      <a class="sidebar-button-link " href="https://github.com/aarzho" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+     
+      <a class="sidebar-button-link " href="https://www.linkedin.com/in/aaron-zhou-5887b58/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-linkedin"></i>
+      
+      <span class="sidebar-button-desc">Linkedin</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+     
+     <a class="sidebar-button-link " href="mailto:aarzho@gmail.com" rel="noopener">
+     
+      <i class="sidebar-button-icon fa fa-lg fa-envelope"></i>
+      
+      <span class="sidebar-button-desc">Email Me</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      Cribsheet for JavaScript Coding Interview
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2018-10-25T00:00:00Z">
+        
+  October 25, 2018
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://aarzho.github.io/categories/blog">blog</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>The coding interviews / coding challenges are designed to assess how productive someone can be with the language. In contrast to the algorithm whiteboarding interview, which assesses how the candidate go about solving a problem, or the architecture design interview, which assesses how the candidate&rsquo;s experience in system engineering and product design, the coding interview is is utilized by the company interviewing you to answer one question:</p>
+<blockquote>
+<p>Can you be productive with JavaScript?</p>
+</blockquote>
+<p>You are usually given the flexibility of choosing the language you are most comfortable with to complete the coding challenge. Thus it&rsquo;s expected you know how to take advantage of all the language specific features and deal with the language specific idiosyncrasies (JavaScript has a lot) to solve problems.</p>
+<p>These tests are also designed to gauge your knowledge of computer science fundamentals like various data structures (e.g., arrays, strings, object/dictionaries), logic building blocks (e.g., loops, if-statements, functions), and problem solving patterns (e.g., recursion, pattern matching, higher order functions).</p>
+<p>For coding challenges, there&rsquo;s always a time limit. The faster you can solve a problem correctly, the better. Thus, this post introduces JavaScript features, best practices,  to leverage and common pitfalls to avoid to help you get productive with JavaScript and get the right result quickly.</p>
+<!-- raw HTML omitted -->
+<p>For more extensive cheatsheet, check out <a href="https://xiaoyunyang.github.io/post/lets-get-productive-with-javascript/">Let&rsquo;s Get Productive With JavaScript</a></p>
+<h1 id="working-with-strings">Working with Strings</h1>
+<h2 id="regex">Regex</h2>
+<p>In a nutshell, regular expression, or regex for short, are patterns you specify to test a string. There are whole books written about regexes. We are going to focus on the most likely problem we&rsquo;re going to need to solve with regex during a coding challenge:</p>
+<blockquote>
+<p>Does the string contain this pattern? If so, how many times does this pattern appear? Where does it appear?</p>
+</blockquote>
+<p>Let&rsquo;s consider this coding challenge:</p>
+<blockquote>
+<p>Given a string, determine if the string is a url.</p>
+</blockquote>
+<p>We can assume we only want to test for websites with the .com and .org top level domains. We don&rsquo;t care if the website actually exists or not.</p>
+<p>Input and expected output:</p>
+<ul>
+<li>&ldquo;google.com&rdquo; → true</li>
+<li>&ldquo;<a href="http://www.icann.org">www.icann.org</a>&rdquo; → true</li>
+<li>&ldquo;google.foobar&rdquo; → false</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">isStrUrl</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">str</span> =&gt; {
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">matchTld</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">/(\.com|\.org)$/i</span>
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">matchTld</span>.<span style="color:#a6e22e">test</span>(<span style="color:#a6e22e">str</span>);
+};
+</code></pre></div><p>The <code>matchTld</code> is the regex that specifies that we are looking for a string that ends with <code>.com</code> or <code>.org</code>. The <code>\.</code> escapes the dot (<code>.</code>). The <code>$</code> at the end of the regex means this pattern should appear at the end of the string. In summary:</p>
+
+ 
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+
+ 
+  
+  
+  
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+<div class="figure fig-75 center" >
+  
+    <a class="fancybox" href="https://aarzho.github.io/post/images/programming/regex-url.png" title="Regex URL" data-fancybox-group="">
+  
+    <img class="fig-img" src="https://aarzho.github.io/post/images/programming/regex-url.png"  alt="Regex URL">
+  
+    </a>
+  
+   
+    <span class="caption">Regex URL</span>
+  
+</div>
+
+  <div style="clear:both;"></div>
+
+<p>You can match an exact sequence in the string using the following regex:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">matchApple</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">/^apple$/</span>
+<span style="color:#a6e22e">matchApple</span>.<span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#39;apple&#39;</span>); <span style="color:#75715e">//&gt; true
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">matchApple</span>.<span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#39;orange&#39;</span>); <span style="color:#75715e">//&gt; false
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">matchApple</span>.<span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#39;apples&#39;</span>); <span style="color:#75715e">//&gt; false
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">matchApple</span>.<span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#39;Apple&#39;</span>); <span style="color:#75715e">//&gt; false
+</span></code></pre></div><p>The caret (<code>^</code>) and the dollar sign (<code>$</code>) signal &ldquo;match from the beginning&rdquo; and &ldquo;match until the end&rdquo;, respectively.</p>
+<p>As illustrated with the above example, regex is case sensitive.</p>
+<p>If you want to match a sequence of characters regardless of whether the letters are upper case or lower case, you could convert every letter in the string to lowercase, then do the pattern matching:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Apple&#39;</span>.<span style="color:#a6e22e">toLowerCase</span>();
+<span style="color:#a6e22e">matchApple</span>.<span style="color:#a6e22e">test</span>(<span style="color:#a6e22e">str</span>); <span style="color:#75715e">//&gt; true
+</span></code></pre></div><p>Other useful regexes include:</p>
+<ul>
+<li>whitespace: <code>/^\s$/</code></li>
+</ul>
+<h2 id="string-manipulation">String manipulation</h2>
+<p>Suppose we have a string containing alphanumeric characters sprinkled with some illegal characters, in particular, angle brackets, forward slash, backward slash, and quote. We want to remove the illegal characters and retain just the letters. How would we go about this string manipulation?</p>
+<p>Using regex:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">dirtyStr</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&lt;script&gt;window.location=\&#34;http://evil.com\&#34;&lt;/script&gt;&#34;</span>;
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">matchIllegals</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">/&lt;|&gt;|\\|\/|&#34;/g</span>;
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">cleanStr</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">dirtyStr</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#a6e22e">matchIllegals</span>, <span style="color:#e6db74">&#34;&#34;</span>);
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">cleanStr</span>); <span style="color:#75715e">//&gt; scriptwindow.location=http:evil.comscript
+</span></code></pre></div><p>We are using the JavaScript built-in function for string, i.e., <code>replace</code>, to replace every angle bracket, slash, and quote in the string with empty string, effectively removing them from the string.</p>
+<h2 id="get-characters-from-string">Get Characters from String</h2>
+<p><code>str.chartAt(i)</code> gives us the character at a index <code>i</code> from <code>str</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hello&#39;</span>
+<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">charAt</span>(<span style="color:#ae81ff">0</span>) <span style="color:#75715e">//&gt; &#39;h&#39;
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">charAt</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">length</span><span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#75715e">//&gt; &#39;o&#39;
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">charAt</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">length</span>) <span style="color:#75715e">//&gt; &#39;&#39;
+</span></code></pre></div><p>What happens if we do the following?</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">charAt</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">length</span>) <span style="color:#75715e">//&gt; &#39;&#39;
+</span></code></pre></div><p>It returns an empty string! You don&rsquo;t get any help like the index out of bounds error that people who work with a statically typed language with a compiler like Java would be familiar with. This could be a really nasty bug. A similar thing happens with arrays when you access an index out of bound array element:  <code>arr[arr.length]</code> gives you <code>undefined</code>.</p>
+<p>Getting Multiple Characters (Substrings)</p>
+<p>Say we have &ldquo;hello world&rdquo; as our string but we only want &ldquo;world&rdquo;. What do we do? Slice recursively. &ldquo;hello&rdquo; plus space is 6 characters.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#e6db74">&#34;hello world&#34;</span>.<span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">6</span>) <span style="color:#75715e">//&gt; &#34;world&#34;
+</span></code></pre></div><p>Using <code>slice</code> works because a string is really just an array of characters.</p>
+<p>A more general function for obtaining the substring is appropriately called <code>substring</code> and it takes two arguments: where to start (inclusive) and where to stop (exclusive). Here&rsquo;s how you use substring:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#e6db74">&#39;hello&#39;</span>.<span style="color:#a6e22e">substring</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>); <span style="color:#75715e">//&gt; &#39;he&#39;
+</span></code></pre></div><p>However, using <code>slice</code> and <code>substring</code> for extracting the sub-string requires knowing exactly where is the starting index is. Usually, the substring we want to extract are delimited by a space or a special character such as a slash. Suppose we have the following problem:</p>
+<blockquote>
+<p>Get the username from the Medium url for user profile.</p>
+</blockquote>
+<p>Usually, webpages for user profile pages on social networking websites have the following form:</p>
+<pre><code>https://&lt;domainName&gt;/&lt;route&gt;/&lt;username&gt;
+</code></pre><p>What we want is the username at the end. Since <code>domainName</code> and <code>route</code> could be arbitrarily long, we can&rsquo;t use <code>slice</code> to solve our problem. What we can do is this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">getUsername</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">url</span> =&gt; {
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">url</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#39;/&#39;</span>).<span style="color:#a6e22e">pop</span>().<span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">1</span>);
+};
+
+<span style="color:#a6e22e">getUsername</span>(<span style="color:#e6db74">&#39;https://medium.com/@xiaoyunyang&#39;</span>) <span style="color:#75715e">//&gt; xiaoyunyang
+</span></code></pre></div><p><code>getUsername</code> function has a one-liner solution but there are few things going on:</p>
+<ol>
+<li><code>split('/')</code> splits the url string into an array of substrings using the slash (<code>/</code>) as delimiter. The output of the <code>split('/')</code> operated on our example url becomes <code>[ 'https:', '', 'medium.com', '@xiaoyunyang' ]</code>, which gets piped into the next operation <code>pop()</code>.</li>
+<li><code>pop()</code> is a built-in function for arrays we will discuss later. What it does is it returns the last element of the array and in the process, mutating the original array. <code>pop()</code> could get us in hot water (we will discuss later in the arrays section) because it&rsquo;s mutating the original array but in this case, it&rsquo;s okay because the array we got from <code>split</code> is an intermediate throw-away data structure that we are only using for deriving the final result. The <code>pop()</code> operation gives us <code>@xiaoyunyang</code>, which we pipe into the next operation.</li>
+<li><code>slice(1)</code>, as discussed above, returns the substring starting from index 1 until the end of the array. This effectively chops off the <code>@</code> and gives us <code>xiaoyunyang</code>, which is the username.</li>
+</ol>
+<h1 id="working-with-arrays">Working with Arrays</h1>
+<p>When we work with arrays in JavaScript, we have a whole suite of built-in functions we can use. This section discusses those functions that returns arrays or mutates the original array. A later section will discuss how to use JavaScript built-in functions for arrays to transform the array to other data types.</p>
+<h2 id="add-things-to-an-array-and-combine-arrays">Add things to an array and combine arrays</h2>
+<p>Mutable</p>
+<ul>
+<li><code>array.push(elem)</code> - adds <code>elem</code> to the end of <code>array</code></li>
+<li><code>array.unshift(elem)</code> - adds <code>elem</code> to the beginning of <code>array</code></li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mutatingAdd</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>];
+
+<span style="color:#a6e22e">mutatingAdd</span>.<span style="color:#a6e22e">push</span>(<span style="color:#ae81ff">4</span>); <span style="color:#75715e">//&gt; [1, 2, 3, 4]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">mutatingAdd</span>.<span style="color:#a6e22e">unshift</span>(<span style="color:#ae81ff">0</span>); <span style="color:#75715e">//&gt; [0, 1, 2, 3, 4]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">mutatingArr</span>); <span style="color:#75715e">//&gt; [0, 1, 2, 3, 4]
+</span></code></pre></div><p>Immutable</p>
+<ul>
+<li><code>array.concat(elem)</code> - adds elem to the front or back of an array without mutating the original array.</li>
+<li><code>[...arr1, ...arr2]</code> - ES6 Spread operator to merge two arrays</li>
+<li><code>[elem, ...arr2]</code> - ES6 add elem to head of the array</li>
+<li><code>[...arr1, elem]</code> - ES6 add elem to tail of the array</li>
+</ul>
+<p>Example with concat:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arr0</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>];
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arr1</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>];
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arr2</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>];
+
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arr3</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arr1</span>.<span style="color:#a6e22e">concat</span>(<span style="color:#a6e22e">arr2</span>); <span style="color:#75715e">//&gt; [1, 2, 3, 4]
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arr4</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arr0</span>.<span style="color:#a6e22e">concat</span>(<span style="color:#a6e22e">arr3</span>); <span style="color:#75715e">//&gt; [0, 1, 2]
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arr5</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arr0</span>.<span style="color:#a6e22e">concat</span>(<span style="color:#a6e22e">arr1</span>, <span style="color:#a6e22e">arr2</span>) <span style="color:#75715e">//&gt; [0, 1, 2, 3, 4]
+</span></code></pre></div><p>Example with spread operator</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arr0</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>];
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arr1</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>];
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arr2</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>];
+
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arr3</span> <span style="color:#f92672">=</span> [...<span style="color:#a6e22e">arr1</span>, ...<span style="color:#a6e22e">arr2</span>]; <span style="color:#75715e">//&gt; [1, 2, 3, 4]
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arr4</span> <span style="color:#f92672">=</span> [...<span style="color:#a6e22e">arr0</span>, ...<span style="color:#a6e22e">arr1</span>]; <span style="color:#75715e">//&gt; [0, 1, 2]
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arr4_altern</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, ...<span style="color:#a6e22e">arr1</span>]; <span style="color:#75715e">//&gt; [0, 1, 2]
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arr5</span> <span style="color:#f92672">=</span> [...<span style="color:#a6e22e">arr0</span>, ...<span style="color:#a6e22e">arr1</span>, ...<span style="color:#a6e22e">arr2</span>]; <span style="color:#75715e">//&gt; [0, 1, 2, 3, 4]
+</span></code></pre></div><h2 id="extract-and-remove-things-from-an-array">Extract and remove things from an array</h2>
+<p>We can access elements in the array using the index. This pattern is commonly used in many other programming elements. This section goes into more details about how to take advantage of JavaScript-specific built-in function to speed up problem solving.</p>
+<p>A common thing we need to do with arrays is to remove the last thing in the array. Since the goal is to mutate the original array, one convenient function helps us do exactly that:</p>
+<p><code>array.splice(-1)</code> - return the tail of <code>array</code> as an array and mutates <code>array</code></p>
+<p>Example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arr</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>];
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">tailArr</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arr</span>.<span style="color:#a6e22e">splice</span>(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>);
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">tailArr</span>) <span style="color:#75715e">//&gt; [2]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">arr</span>) <span style="color:#75715e">//&gt; [0, 1]
+</span></code></pre></div><p>One gotcha with using <code>splice</code> in this way is <code>arr.splice(-1)</code> returns the tail element of <code>arr</code> wrapped in an array. If you just want <code>elem</code>, you can use ES6 destructuring:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">tail</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">tailArr</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">tail</span>); <span style="color:#75715e">//&gt; 2
+</span></code></pre></div><p>Unfortunately, ES6 destructuring does not support extraction of last element of an array. However, ES6 destructuring and rest operator is very useful for returning the head of the array as <code>elem</code> instead of an array containing an <code>elem</code> without mutating the rest of the array:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arr</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>];
+<span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">head</span>, ...<span style="color:#a6e22e">rest</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">arr</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">head</span>); <span style="color:#75715e">//&gt; 0
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">rest</span>); <span style="color:#75715e">//&gt; [1, 2]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">arr</span>); <span style="color:#75715e">//&gt; [0, 1, 2]
+</span></code></pre></div><p>In fact, you can use ES6 destructuring to get extract more than one elements from the array starting from the head of the array:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arr</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>];
+<span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">first</span>, <span style="color:#a6e22e">second</span>, <span style="color:#a6e22e">third</span>, ...<span style="color:#a6e22e">rest</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">arr</span>;
+</code></pre></div><p>If you just want to return the last element of the array without mutating the original array, we can use <code>arr.slice(-1)</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arr</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>];
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">tailArr</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arr</span>.<span style="color:#a6e22e">slice</span>(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>);
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">tailArr</span>); <span style="color:#75715e">//&gt; [2]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">arr</span>); <span style="color:#75715e">//&gt; [0, 1, 2]
+</span></code></pre></div><p><code>slice</code> and <code>splice</code> are useful for extracting any part of the array, not just the tail. The general way you use these functions is <code>arr.slice(from, until)</code> and <code>arr.splice(from, until)</code> where <code>from</code> and <code>until</code> are indices.  The sub-array returned from these operations includes the element at index <code>from</code> until the element that precedes index <code>until</code>. For example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">numbers</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>];
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">lessThanThree</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">numbers</span>.<span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">3</span>); <span style="color:#75715e">//&gt; [0, 1, 2]
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">moreThanTwo</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">numbers</span>.<span style="color:#a6e22e">splice</span>(<span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">numbers</span>.<span style="color:#a6e22e">length</span>); <span style="color:#75715e">//&gt; [2, 3, 4]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">numbers</span>); <span style="color:#75715e">//&gt; [0, 1]
+</span></code></pre></div><p>Beware! If you reversed the order in which you use <code>slice</code> and <code>splice</code>, in the code above, the code will not have any run-time errors but you&rsquo;re going to have some nasty logic bugs:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">numbers</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>];
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">moreThanTwo</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">numbers</span>.<span style="color:#a6e22e">splice</span>(<span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">numbers</span>.<span style="color:#a6e22e">length</span>); <span style="color:#75715e">//&gt; [2, 3, 4]
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">lessThanThree</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">numbers</span>.<span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">3</span>); <span style="color:#75715e">//&gt; [0, 1]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">lessThanThree</span>); <span style="color:#75715e">//&gt; [0, 1] ... not [0, 1, 2] as we expect
+</span></code></pre></div><p>Therefore, when you are trying to quickly solve a programming problem correctly, be absolutely disciplined about using immutable functions like <code>slice</code> and ES6 destructuring so you&rsquo;re not spending 10 minutes of your 30 minute coding challenge time debugging this bug.</p>
+<h2 id="sorting-things-in-array">Sorting things in Array</h2>
+<p>Suppose we have the following numbers we would like to sort:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">nums</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">0</span>];
+</code></pre></div><p>Sort in ascending order:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">nums</span>.<span style="color:#a6e22e">sort</span>((<span style="color:#a6e22e">a</span>,<span style="color:#a6e22e">b</span>) =&gt; {
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">a</span><span style="color:#f92672">-</span><span style="color:#a6e22e">b</span>
+});
+
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">nums</span>) <span style="color:#75715e">//&gt; [ 0, 1, 2, 2, 3, 7 ]
+</span></code></pre></div><p>Sort in descending order:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">nums</span>.<span style="color:#a6e22e">sort</span>((<span style="color:#a6e22e">a</span>,<span style="color:#a6e22e">b</span>) =&gt; {
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">b</span><span style="color:#f92672">-</span><span style="color:#a6e22e">a</span>
+});
+
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">nums</span>); <span style="color:#75715e">//&gt; [ 7, 3, 2, 2, 1, 0 ]
+</span></code></pre></div><p>It&rsquo;s important note that the <code>sort</code> function mutates the original array!</p>
+<p>If you don&rsquo;t pass in a function, <code>sort</code> will by default give you the mutated array in ascending order.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">letters</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;c&#39;</span>, <span style="color:#e6db74">&#39;r&#39;</span>, <span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#e6db74">&#39;b&#39;</span>, <span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#e6db74">&#39;t&#39;</span>]
+<span style="color:#a6e22e">letters</span>.<span style="color:#a6e22e">sort</span>()
+<span style="color:#a6e22e">letters</span> <span style="color:#75715e">//&gt; [ &#39;a&#39;, &#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;r&#39;, &#39;t&#39; ]
+</span></code></pre></div><p>Another useful function is <code>String.prototype.localeCompare</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">letters</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;c&#39;</span>, <span style="color:#e6db74">&#39;r&#39;</span>, <span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#e6db74">&#39;b&#39;</span>, <span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#e6db74">&#39;t&#39;</span>]
+<span style="color:#a6e22e">letters</span>.<span style="color:#a6e22e">sort</span>((<span style="color:#a6e22e">a</span>,<span style="color:#a6e22e">b</span>) =&gt; {<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">localeCompare</span>(<span style="color:#a6e22e">a</span>)})
+<span style="color:#a6e22e">letters</span> <span style="color:#75715e">//&gt; [ &#39;t&#39;, &#39;r&#39;, &#39;c&#39;, &#39;b&#39;, &#39;a&#39;, &#39;a&#39; ]
+</span></code></pre></div><h1 id="working-with-objects">Working with Objects</h1>
+<p>JavaScript Objects are used to store key-value pairs and can nest other objects as deep as you want. In JavaScript, arrays are actually objects where the keys are numbers. I can make an array using an object notation:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arr1</span> <span style="color:#f92672">=</span> {
+    <span style="color:#ae81ff">0</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>,
+    <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>,
+    <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>
+}
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arr2</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>];
+</code></pre></div><p>The syntax  I use to access the elements from the object and array are indistinguishable:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">arr1</span>[<span style="color:#ae81ff">1</span>] <span style="color:#75715e">//&gt; 1
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">arr2</span>[<span style="color:#ae81ff">1</span>] <span style="color:#75715e">//&gt; 1
+</span></code></pre></div><p>This is how I remember the rules for accessing the value of an object using the key - it looks just like the way you access the element of an array at a given index!</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">basket</span> <span style="color:#f92672">=</span> {
+    <span style="color:#e6db74">&#39;apple&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>,
+    <span style="color:#e6db74">&#39;pear&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>
+}
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">numApple</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">basket</span>[<span style="color:#e6db74">&#39;apple&#39;</span>]; <span style="color:#75715e">//&gt; 1
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">numPear</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">basket</span>[<span style="color:#e6db74">&#39;pear&#39;</span>]; <span style="color:#75715e">//&gt; 2
+</span></code></pre></div><h2 id="size-of-object">Size of object</h2>
+<ul>
+<li><code>Object.keys(dict).length</code> gives you the number of entries in the object called <code>dict</code> (short for dictionary).</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">basket</span> <span style="color:#f92672">=</span> {};
+Object.<span style="color:#a6e22e">keys</span>(<span style="color:#a6e22e">basket</span>).<span style="color:#a6e22e">length</span>; <span style="color:#75715e">// 0
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">basket</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">apple</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>}
+Object.<span style="color:#a6e22e">keys</span>(<span style="color:#a6e22e">basket</span>).<span style="color:#a6e22e">length</span>; <span style="color:#75715e">// 1
+</span></code></pre></div><h2 id="merging-two-objects">Merging two objects</h2>
+<ul>
+<li>Use spread operator</li>
+</ul>
+<p>There&rsquo;s a more verbose way of doing it but we are using ES6&rsquo;s spread operator here:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">foo</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">a</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#a6e22e">b</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;b&#39;</span>}
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">bar</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">c</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;c&#39;</span>, <span style="color:#a6e22e">d</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;d&#39;</span>}
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">foobar</span> <span style="color:#f92672">=</span> {...<span style="color:#a6e22e">foo</span>, ...<span style="color:#a6e22e">bar</span>} <span style="color:#75715e">//&gt; {a: &#34;a&#34;, b: &#34;b&#34;, c: &#34;c&#34;, d: &#34;d&#34;}
+</span></code></pre></div><p>you can also use the spread operator to make a deep copy of the object.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">foobarCpy</span> <span style="color:#f92672">=</span> {...<span style="color:#a6e22e">foobar</span>} <span style="color:#75715e">//&gt; {a: &#34;a&#34;, b: &#34;b&#34;, c: &#34;c&#34;, d: &#34;d&#34;}
+</span></code></pre></div><p>Consistent with the tip above for preferring <code>slice</code> over <code>splice</code> for array operations, we want to err on the side of immutability. We want to make deep copies of things before we start changing things in arrays and objects to avoid nasty bugs and side effects. Assigning objects to another variable does not make a copy of the object, rather, it creates a new reference to the original object:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">basket</span> <span style="color:#f92672">=</span> {
+    <span style="color:#a6e22e">apple</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>,
+    <span style="color:#a6e22e">pear</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>
+}
+
+<span style="color:#a6e22e">basket2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">basket</span>;
+<span style="color:#a6e22e">basketCpy</span> <span style="color:#f92672">=</span> {...<span style="color:#a6e22e">basket</span>};
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">basket</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">basket2</span>); <span style="color:#75715e">//&gt; true
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">basket</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">basketCpy</span>); <span style="color:#75715e">//&gt; false
+</span></code></pre></div><h2 id="add-and-remove-things-from-object">Add and remove things from object</h2>
+<p>Add to object (functional way):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">addToDict</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">dict</span>, <span style="color:#a6e22e">newKey</span>, <span style="color:#a6e22e">newVal</span>) =&gt; {
+  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">dict</span>[<span style="color:#a6e22e">newKey</span>]) <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">dict</span>;
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">newDict</span> <span style="color:#f92672">=</span> {...<span style="color:#a6e22e">dict</span>};
+  <span style="color:#a6e22e">newDict</span>[<span style="color:#a6e22e">newKey</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">newVal</span>;
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">newDict</span>;
+};
+</code></pre></div><p>Delete from object (functional way):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">deleteFromDict</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">dict</span>, <span style="color:#a6e22e">newKey</span>, <span style="color:#a6e22e">newVal</span>) =&gt; {
+  <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">dict</span>[<span style="color:#a6e22e">key</span>]) <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">dict</span>;
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">newDict</span> <span style="color:#f92672">=</span> {...<span style="color:#a6e22e">dict</span>};
+  <span style="color:#a6e22e">newDict</span>[<span style="color:#a6e22e">key</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">newVal</span>;
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">newDict</span>;
+};
+</code></pre></div><p>Sometimes for performance reasons, it&rsquo;s desirable to add/delete from object by mutating the object:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">foobar</span> <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;foo&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;foo&#39;</span>, <span style="color:#e6db74">&#39;bar&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;bar&#39;</span>};
+<span style="color:#66d9ef">delete</span> <span style="color:#a6e22e">foobar</span>[<span style="color:#e6db74">&#39;bar&#39;</span>];
+<span style="color:#a6e22e">foobar</span>[<span style="color:#e6db74">&#39;baz&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;baz&#39;</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">foobar</span>); <span style="color:#75715e">//&gt; { foo: &#39;foo&#39;, baz: &#39;baz&#39; }
+</span></code></pre></div><h2 id="compare-two-objects">Compare two objects</h2>
+<p>What if you have two dictionaries and you want to see if they are equal? The trick is to use <code>JSON.stringify</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">dict1</span> <span style="color:#f92672">=</span> {};
+<span style="color:#a6e22e">dict1</span>[<span style="color:#e6db74">&#39;a&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+<span style="color:#a6e22e">dict1</span>[<span style="color:#e6db74">&#39;b&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
+
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">dict2</span> <span style="color:#f92672">=</span> {};
+<span style="color:#a6e22e">dict2</span>[<span style="color:#e6db74">&#39;a&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+<span style="color:#a6e22e">dict2</span>[<span style="color:#e6db74">&#34;b&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
+
+<span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">dict1</span>) <span style="color:#f92672">===</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">dict2</span>); <span style="color:#75715e">//&gt; true
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">dict1</span>[<span style="color:#e6db74">&#39;a&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
+<span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">dict1</span>) <span style="color:#f92672">===</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">dict2</span>); <span style="color:#75715e">//&gt; false
+</span></code></pre></div><h2 id="making-a-deep-copy-of-object">Making A Deep Copy of Object</h2>
+<p>Once again the trick is to use <code>JSON.stringify</code> along with <code>JSON.parse</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">makeDeepCopy</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">obj</span> =&gt; {
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">obj</span>))
+}
+</code></pre></div><h1 id="conversion-between-data-types">Conversion Between Data Types</h1>
+<p>We can use functions to transform between these data types as depicted in the graph below:</p>
+
+ 
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+
+ 
+  
+  
+  
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+<div class="figure fig-75 center" >
+  
+    <a class="fancybox" href="https://aarzho.github.io/post/images/programming/data-type-conversion.png" title="Conversion Between Different Data Types" data-fancybox-group="">
+  
+    <img class="fig-img" src="https://aarzho.github.io/post/images/programming/data-type-conversion.png"  alt="Conversion Between Different Data Types">
+  
+    </a>
+  
+   
+    <span class="caption">Conversion Between Different Data Types</span>
+  
+</div>
+
+  <div style="clear:both;"></div>
+
+<h1 id="generating-a-random-number">Generating a Random Number</h1>
+<p>The following function returns a random number between min (inclusive) and max (exclusive):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getRandomNumber</span>(<span style="color:#a6e22e">min</span>, <span style="color:#a6e22e">max</span>) {
+  <span style="color:#66d9ef">return</span> Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">*</span> (<span style="color:#a6e22e">max</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">min</span>) <span style="color:#f92672">+</span> <span style="color:#a6e22e">min</span>;
+}
+</code></pre></div><p>If we want to generate a random integer between min (inclusive) and max (exclusive):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getRandomInteger</span>(<span style="color:#a6e22e">min</span>, <span style="color:#a6e22e">max</span>) {
+  <span style="color:#66d9ef">return</span> Math.<span style="color:#a6e22e">floor</span>(Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">*</span> (<span style="color:#a6e22e">max</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">min</span>)) <span style="color:#f92672">+</span> <span style="color:#a6e22e">min</span>;
+}
+</code></pre></div><h1 id="data-structures">Data Structures</h1>
+<h2 id="linked-list">Linked List</h2>
+<p>Basic operations are <code>appendToHead</code>, <code>appendToTail</code>.
+Linked List provides O(1) appendToHead operations but O(N) look up.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">ListNode</span>(<span style="color:#a6e22e">val</span>) {
+  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">val</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">val</span>;
+  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">next</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>;
+}
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">ListNode</span>.<span style="color:#a6e22e">prototype</span>.<span style="color:#a6e22e">appendToTail</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">val</span>) {
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">curr</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>
+  <span style="color:#66d9ef">while</span>(<span style="color:#a6e22e">curr</span>) {
+    <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">curr</span>.<span style="color:#a6e22e">next</span>) {
+      <span style="color:#a6e22e">curr</span>.<span style="color:#a6e22e">next</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">ListNode</span>(<span style="color:#a6e22e">val</span>)
+      <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>
+    }
+    <span style="color:#a6e22e">curr</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">curr</span>.<span style="color:#a6e22e">next</span>
+  }
+  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>
+}
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">ListNode</span>.<span style="color:#a6e22e">prototype</span>.<span style="color:#a6e22e">appendToHead</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">val</span>) {
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">head</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">ListNode</span>(<span style="color:#a6e22e">val</span>)
+  <span style="color:#a6e22e">head</span>.<span style="color:#a6e22e">next</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">head</span>
+}
+</code></pre></div><h2 id="stack">Stack</h2>
+<p>Basic operations are:</p>
+<ul>
+<li><code>push(item)</code> - adds item to top of stack -  O(1)</li>
+<li><code>pop()</code> - remove the top item from the stack - O(1)</li>
+<li><code>peek()</code> - returns top of the stack - O(1)</li>
+<li><code>isEmpty()</code> - returns true if stack is empty - O(1)</li>
+</ul>
+<p>We can use JavaScript&rsquo;s array object as a stack.</p>
+<p>For example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">browserHistory</span> <span style="color:#f92672">=</span> []
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">clickLink</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">link</span> =&gt; {
+  <span style="color:#a6e22e">browserHistory</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">link</span>)
+}
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">clickBackBtn</span> <span style="color:#f92672">=</span> () =&gt; {
+  <span style="color:#a6e22e">browserHistory</span>.<span style="color:#a6e22e">pop</span>()
+}
+<span style="color:#a6e22e">clickLink</span>(<span style="color:#e6db74">&#39;facebook.com&#39;</span>)
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">browserHistory</span>) <span style="color:#75715e">//&gt; [ &#39;facebook.com&#39; ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">clickLink</span>(<span style="color:#e6db74">&#39;medium.com&#39;</span>)
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">browserHistory</span>) <span style="color:#75715e">//&gt; [ &#39;facebook.com&#39;, &#39;medium.com&#39; ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">clickBackBtn</span>()
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">browserHistory</span>) <span style="color:#75715e">//&gt; [ &#39;facebook.com&#39; ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">clickLink</span>(<span style="color:#e6db74">&#39;youtube.com&#39;</span>)
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">browserHistory</span>) <span style="color:#75715e">//&gt; [ &#39;facebook.com&#39;, &#39;youtube.com&#39; ]
+</span></code></pre></div><p>Problem to be solved using a stack is Palindrome</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// palindrome (odd number): racecar, dad
+</span><span style="color:#75715e"></span><span style="color:#75715e">// palindrom (even number): abba
+</span><span style="color:#75715e"></span><span style="color:#75715e">// ignore space?
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">isPalindrome</span>(<span style="color:#a6e22e">str</span>) {
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">seen</span> <span style="color:#f92672">=</span> [] <span style="color:#75715e">//&gt; stack
+</span><span style="color:#75715e"></span>
+  <span style="color:#75715e">// construct stack
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">curr</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">charAt</span>(<span style="color:#a6e22e">i</span>)
+    <span style="color:#a6e22e">seen</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">curr</span>)
+  }
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">revStr</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+
+  <span style="color:#75715e">// construct reverse string
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">while</span>(<span style="color:#a6e22e">seen</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>) {
+    <span style="color:#a6e22e">revStr</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">seen</span>.<span style="color:#a6e22e">pop</span>()
+
+    <span style="color:#75715e">//optimization
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">revStr</span><span style="color:#f92672">!==</span><span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">substring</span>(<span style="color:#ae81ff">0</span>,<span style="color:#a6e22e">revStr</span>.<span style="color:#a6e22e">length</span>)) {
+      <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>
+    }
+  }
+
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">revStr</span>
+}
+</code></pre></div><h2 id="queue">Queue</h2>
+<ul>
+<li><code>add(item)</code> - add an item to the end of the list - O(1)</li>
+<li><code>remove()</code> - remove the first item in the list - O(1)</li>
+<li><code>peek()</code> - return the front of the queue</li>
+<li><code>isEmpty()</code> - return true if the queue is empty</li>
+</ul>
+<p>How to implement a Queue in JavaScript (See <a href="https://repl.it/@xiaoyunyang/Queue">repl</a>)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">DoublyNode</span>(<span style="color:#a6e22e">val</span>) {
+  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">val</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">val</span>;
+  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">prev</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>
+  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">next</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>
+}
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Queue</span>() {
+  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">front</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>
+  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">back</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>
+
+  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">add</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">item</span> =&gt; {
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">newNode</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">DoublyNode</span>(<span style="color:#a6e22e">item</span>)
+    <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">front</span>) {
+      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">front</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">newNode</span>
+      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">back</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">newNode</span>
+      <span style="color:#66d9ef">return</span>
+    }
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">back</span>.<span style="color:#a6e22e">next</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">newNode</span>
+    <span style="color:#a6e22e">newNode</span>.<span style="color:#a6e22e">prev</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">back</span>
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">back</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">newNode</span>
+  }
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">printForward</span> <span style="color:#f92672">=</span> () =&gt; {
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">vals</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">n</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">front</span>
+    <span style="color:#66d9ef">while</span>(<span style="color:#a6e22e">n</span>) {
+      <span style="color:#a6e22e">vals</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">n</span>.<span style="color:#a6e22e">val</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> -&gt; </span><span style="color:#e6db74">`</span>
+      <span style="color:#a6e22e">n</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">n</span>.<span style="color:#a6e22e">next</span>
+    }
+    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">vals</span><span style="color:#e6db74">}</span><span style="color:#e6db74">null</span><span style="color:#e6db74">`</span>
+  }
+  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">printBackward</span> <span style="color:#f92672">=</span> () =&gt; {
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">vals</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">n</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">back</span>
+    <span style="color:#66d9ef">while</span>(<span style="color:#a6e22e">n</span>) {
+      <span style="color:#a6e22e">vals</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74"> &lt;- </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">n</span>.<span style="color:#a6e22e">val</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>.<span style="color:#a6e22e">concat</span>(<span style="color:#a6e22e">vals</span>)
+      <span style="color:#a6e22e">n</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">n</span>.<span style="color:#a6e22e">prev</span>
+    }
+    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">null</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">vals</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>
+  }
+  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">remove</span> <span style="color:#f92672">=</span> () =&gt; {
+    <span style="color:#75715e">// remove from the front and return the removed node&#39;s val
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">front</span>) <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">null</span>
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">firstNode</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">front</span>
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">front</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">front</span>.<span style="color:#a6e22e">next</span>
+    <span style="color:#75715e">// edge case: if this.front.next is null, the next line of
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// code will fail because can&#39;t dereference null pointer
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">front</span>) {
+      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">front</span>.<span style="color:#a6e22e">prev</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>
+    } <span style="color:#66d9ef">else</span> {
+      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">back</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>
+    }
+    <span style="color:#a6e22e">firstNode</span>.<span style="color:#a6e22e">next</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">firstNode</span>.<span style="color:#a6e22e">val</span>
+  }
+
+  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">peek</span> <span style="color:#f92672">=</span> () =&gt; {
+    <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">front</span>) <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">null</span>
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">front</span>.<span style="color:#a6e22e">val</span>
+  }
+}
+</code></pre></div><h1 id="shortcuts">Shortcuts</h1>
+<h2 id="initialize-array">Initialize Array</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">arr</span> <span style="color:#f92672">=</span> Array(<span style="color:#ae81ff">10</span>);
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">arr</span>); <span style="color:#75715e">//&gt; [ &lt;10 empty items&gt; ]
+</span></code></pre></div><h2 id="find-max">Find Max</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arr</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]
+Math.<span style="color:#a6e22e">max</span>(...<span style="color:#a6e22e">arr</span>)
+</code></pre></div><p>There&rsquo;s a few gotchas associated with <code>Math.max</code>. Consider if you have an array in which contains <code>null</code> or <code>undefined</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(Math.<span style="color:#a6e22e">max</span>(...[<span style="color:#66d9ef">null</span>, <span style="color:#66d9ef">null</span>])); <span style="color:#75715e">//&gt; 0
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(Math.<span style="color:#a6e22e">max</span>(...[<span style="color:#66d9ef">null</span>, <span style="color:#ae81ff">1</span>])); <span style="color:#75715e">//&gt; 1
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(Math.<span style="color:#a6e22e">max</span>(...[<span style="color:#66d9ef">undefined</span>, <span style="color:#66d9ef">undefined</span>])); <span style="color:#75715e">//&gt; NaN
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(Math.<span style="color:#a6e22e">max</span>(...[<span style="color:#66d9ef">undefined</span>, <span style="color:#66d9ef">null</span>, <span style="color:#ae81ff">1</span>])); <span style="color:#75715e">//&gt; NaN
+</span></code></pre></div><p>Empty elements in the array is the same as <code>undefined</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">foo</span> <span style="color:#f92672">=</span> Array(<span style="color:#ae81ff">3</span>)
+<span style="color:#a6e22e">foo</span>[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(Math.<span style="color:#a6e22e">max</span>(...<span style="color:#a6e22e">foo</span>)) <span style="color:#75715e">//&gt; NaN
+</span></code></pre></div><h2 id="swapping">Swapping</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hello&#39;</span>;
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;world&#39;</span>
+[<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>] <span style="color:#f92672">=</span> [<span style="color:#a6e22e">b</span>, <span style="color:#a6e22e">a</span>];
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>) <span style="color:#75715e">//&gt; &#39;world&#39;
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>) <span style="color:#75715e">//&gt; &#39;hello&#39;
+</span></code></pre></div><h2 id="generating-a-sequence">Generating a sequence</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">indices</span> <span style="color:#f92672">=</span> Array.<span style="color:#a6e22e">from</span>(Array(<span style="color:#ae81ff">10</span>).<span style="color:#a6e22e">keys</span>());
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">indices</span>); <span style="color:#75715e">//&gt; (10) [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+</span></code></pre></div><h2 id="use-splice-to-insert-into-array">Use Splice to insert into array</h2>
+<p>Let&rsquo;s write a function that insert a new element into a sorted array. splice is very handy in this situation.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">insertIntoSorted</span>(<span style="color:#a6e22e">newItem</span>, <span style="color:#a6e22e">sortedItems</span>) {
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">arr</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sortedItems</span>
+  <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">arr</span>) {
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">curr</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arr</span>[<span style="color:#a6e22e">i</span>];
+    <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">newItem</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">curr</span>) {
+      <span style="color:#a6e22e">arr</span>.<span style="color:#a6e22e">splice</span>(<span style="color:#a6e22e">i</span>, <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">newItem</span>);
+      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">arr</span>;
+    }
+  }
+  <span style="color:#a6e22e">arr</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">newItem</span>);
+
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">arr</span>;
+}
+</code></pre></div><p>In action:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">arr</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">9</span>]
+<span style="color:#a6e22e">arr</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">insertIntoSorted</span>(<span style="color:#ae81ff">10</span>, <span style="color:#a6e22e">arr</span>)
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">arr</span>) <span style="color:#75715e">//&gt; [ 1, 2, 5, 9, 10 ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">arr</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">insertIntoSorted</span>(<span style="color:#ae81ff">4</span>, <span style="color:#a6e22e">arr</span>)
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">arr</span>) <span style="color:#75715e">//&gt; [ 1, 2, 4, 5, 9, 10 ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">arr</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">insertIntoSorted</span>(<span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">arr</span>)
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">arr</span>) <span style="color:#75715e">//&gt; [ 0, 1, 2, 4, 5, 9, 10 ]
+</span></code></pre></div><h2 id="optional-parameter">Optional Parameter</h2>
+<p>ES6 shortcut using default value:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">foo</span>(<span style="color:#a6e22e">fruit</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;apple&#39;</span>) {
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">toPrint</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">fruit</span>
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;word:&#39;</span>, <span style="color:#a6e22e">toPrint</span>)
+}
+</code></pre></div><p>As opposed to the old way of doing it using ternary operator:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">foo</span>(<span style="color:#a6e22e">fruit</span>) {
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">toPrint</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">fruit</span> <span style="color:#f92672">?</span> <span style="color:#a6e22e">fruit</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;apple&#39;</span>
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;word:&#39;</span>, <span style="color:#a6e22e">toPrint</span>)
+}
+</code></pre></div><h2 id="quickly-convert-string-to-number">Quickly convert string to number</h2>
+<p>Prepending <code>+</code> to the string is a shorthand for converting the string to a number.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">a</span>,<span style="color:#a6e22e">b</span>,<span style="color:#a6e22e">c</span>] <span style="color:#f92672">=</span> [<span style="color:#f92672">+</span><span style="color:#e6db74">&#39;1&#39;</span>, <span style="color:#f92672">+</span><span style="color:#e6db74">&#39;1.5&#39;</span>, <span style="color:#f92672">+</span><span style="color:#e6db74">&#39;foo&#39;</span>];
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>); <span style="color:#75715e">//&gt; 1
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>); <span style="color:#75715e">//&gt; 1.5
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">c</span>); <span style="color:#75715e">//&gt; NaN
+</span></code></pre></div><h2 id="different-kinds-of-loop">Different kinds of loop</h2>
+<p>Suppose we have the following data we want to loop through:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">colors</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;red&#39;</span>, <span style="color:#e6db74">&#39;blue&#39;</span>, <span style="color:#e6db74">&#39;green&#39;</span>, <span style="color:#e6db74">&#39;purple&#39;</span>, <span style="color:#e6db74">&#39;yellow&#39;</span>];
+</code></pre></div><p>We could do a simple for-loop:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">colors</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">colors</span>[<span style="color:#a6e22e">i</span>])
+}
+</code></pre></div><p>There&rsquo;s a less verbose way of achieving the same thing:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">colors</span>) {
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">colors</span>[<span style="color:#a6e22e">i</span>]);
+}
+</code></pre></div><p>If we don&rsquo;t are about the index but just the value, we could use <code>forEach</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">colors</span>.<span style="color:#a6e22e">forEach</span>(<span style="color:#a6e22e">color</span> =&gt; {
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">color</span>)
+});
+</code></pre></div><p>For some algorithms, we may need to use the while-loop:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">while</span>(<span style="color:#a6e22e">colors</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>) {
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">color</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">colors</span>.<span style="color:#a6e22e">shift</span>();
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">color</span>);
+}
+</code></pre></div><p>Note, the while-loop operation above mutates the original array!</p>
+<p>To loop through an object, we could do the following:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">keycodeMapping</span> <span style="color:#f92672">=</span> {
+  <span style="color:#ae81ff">65</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;a&#39;</span>,
+  <span style="color:#ae81ff">66</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;b&#39;</span>,
+  <span style="color:#ae81ff">187</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;=&#39;</span>,
+  <span style="color:#ae81ff">191</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;/&#39;</span>
+};
+
+Object.<span style="color:#a6e22e">keys</span>(<span style="color:#a6e22e">keycodeMapping</span>).<span style="color:#a6e22e">forEach</span>(<span style="color:#a6e22e">key</span> =&gt; {
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;keycode, value:&#39;</span>, <span style="color:#a6e22e">key</span>, <span style="color:#a6e22e">keycodeMapping</span>[<span style="color:#a6e22e">key</span>]);
+});
+</code></pre></div><h1 id="tips-for-writing-good-js-code">Tips for writing Good JS Code</h1>
+<h2 id="tip-1-use-let-and-const-instead-of-var">Tip #1: Use let and const instead of var</h2>
+<ul>
+<li>Use <code>const</code> for unchanging values.</li>
+<li>Use <code>let</code> for changing values.</li>
+</ul>
+<p><code>var</code> is scoped to the function while <code>let</code> is scoped to the <a href="https://edgecoders.com/function-scopes-and-block-scopes-in-javascript-25bbd7f293d7">block</a>. <code>let</code> also <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#Description">prevents re-declaration</a> of variables in the same scope.</p>
+<p>Here&rsquo;s an example to understand the differences between <code>let</code> and  <code>var</code>. (<a href="https://repl.it/@xiaoyunyang/let-v-var">try it out in repl</a>)</p>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>let-v-var.js</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language-"><code class="">function foo() {
+  let res = &#39;&#39;
+  let j = 10
+
+  for(let i=0; i&lt;j; i&#43;&#43;) {
+    // uncommenting ... the following line causes error
+    // var j = 5
+    res &#43;= `${j}, `
+    j -= 1
+  }
+  res &#43;= `${j}`
+  console.log(`foo: ${res}`)
+}
+
+function bar() {
+  let res = &#39;&#39;
+  let j = 10
+
+  for(let i=0; i&lt;j; i&#43;&#43;) {
+    let j = 5
+    res &#43;= `${j}, `
+    j -= 1
+  }
+  res &#43;= `${j}`
+  console.log(`bar: ${res}`)
+}
+
+function baz() {
+  let res = &#39;&#39;
+  var j = 10
+
+  for(let i=0; i&lt;j; i&#43;&#43;) {
+    var j = 5
+    res &#43;= `${j}, `
+    j -= 1
+  }
+  res &#43;= `${j}`
+  console.log(`baz: ${res}`)
+}</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>What do we expect logged to console when we run <code>foo()</code>, <code>bar()</code> and <code>baz()</code>?</p>
+<pre><code>foo: 10, 9, 8, 7, 6, 5
+bar: 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 10
+baz: 5, 5, 5, 5, 4
+</code></pre><p>Let&rsquo;s discuss what&rsquo;s happening in each function to fully appreciate the nuances between <code>var</code> and <code>let</code>.</p>
+<p>**foo:**<!-- raw HTML omitted -->
+Line 7 is commented out because it causes the &ldquo;duplicate declaration&rdquo; error because <code>var</code> is scoped to the <code>foo</code> function and on line 3, <code>j</code> is already declared and scoped to <code>foo</code> using the <code>let</code> keyword. Variables declared using <code>let</code> is protected from re-decalaration in the same scope. What happens if we declare <code>j</code> on Line 3 using <code>var</code> and declare <code>j</code> on Line 7 using <code>let</code>? The result is going to be same as <code>bar</code>. Why?</p>
+<p>**bar:**<!-- raw HTML omitted -->
+The <code>j</code> in the condition of the for-loop on line 19 is the same <code>j</code> that&rsquo;s declared on line 17. The <code>j</code> that is being concatenated to <code>res</code> on line 21 is the same <code>j</code> that is declared on line 20. Line 20 does not cause the &ldquo;duplicate decalaration&rdquo; error because the <code>let</code> keyword is used so a new variable is created which is scoped ot the for-loop. When accessing <code>j</code> on line 21, the one that is closest to the current scope is used. Therefore, <code>bar</code> prints out 10 &ldquo;5&quot;s, followed by one &ldquo;10&rdquo; at the end. The fact that <code>j</code> is &ldquo;10&rdquo; before the function returns confirms that the <code>j</code> declared on line 17 is never changed and and that a new <code>j</code> is created on line 20.</p>
+<p>**baz:**<!-- raw HTML omitted -->
+Both the <code>j</code>s declared on line 30 and 33 are scoped to the <code>baz</code> function. We can re-declare <code>j</code> on line 33 because <code>j</code> is originally declared on line 30 and <code>var</code> doesn&rsquo;t have re-declaration protection. The two <code>j</code>s are the same. On line 33, <code>j</code> is reassigned as 5. So what is value of <code>j</code> on Line 32 which is being compared with <code>i</code>? The first time the for-loop is run, it&rsquo;s 10. The subsequent runs, it&rsquo;s 5. Therefore, the result of <code>bar</code> is four 5&rsquo;s, followed by a 4.</p>
+<h2 id="tip-2-avoid-side-effects">Tip #2 Avoid Side Effects</h2>
+<p>Suppose we want to sort a shuffled array, then print out the shuffled array and the sorted array. Let&rsquo;s implement the <code>sortArr</code> function to accomplish that:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">sortArr</span>(<span style="color:#a6e22e">arr</span>) {
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">arr</span>.<span style="color:#a6e22e">sort</span>((<span style="color:#a6e22e">a</span>,<span style="color:#a6e22e">b</span>) =&gt; <span style="color:#a6e22e">a</span><span style="color:#f92672">-</span><span style="color:#a6e22e">b</span>)
+}
+</code></pre></div><p>When we run the following code, we get an incorrect result when we print out the original array:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arr</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">1</span>]
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">sortedArr</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sortArr</span>(<span style="color:#a6e22e">arr</span>)
+
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">arr</span>) <span style="color:#75715e">//&gt; [ 1, 2, 3, 4 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">sortedArr</span>) <span style="color:#75715e">//&gt; [ 1, 2, 3, 4 ]
+</span></code></pre></div><p><code>Array.sort</code> mutates the original array! This is a side effect we&rsquo;d like to avoid.</p>
+<p>To fix this problem, we make a copy of the original array, then sort that copy:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">sortArr</span>(<span style="color:#a6e22e">arr</span>) {
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arrCpy</span> <span style="color:#f92672">=</span> [...<span style="color:#a6e22e">arr</span>]
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">arrCpy</span>.<span style="color:#a6e22e">sort</span>((<span style="color:#a6e22e">a</span>,<span style="color:#a6e22e">b</span>) =&gt; <span style="color:#a6e22e">a</span><span style="color:#f92672">-</span><span style="color:#a6e22e">b</span>)
+}
+</code></pre></div><h1 id="study-material-for-js-interviews">Study material for JS interviews:</h1>
+<ul>
+<li><a href="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36#.ecfskj935">What is a Closure?</a></li>
+<li><a href="https://medium.com/javascript-scene/master-the-javascript-interview-what-s-the-difference-between-class-prototypal-inheritance-e4cd0a7562e9#.h96dymht1">What is the Difference Between Class and Prototypal Inheritance?</a></li>
+<li><a href="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976#.4256pjcfq">What is a Pure Function?</a></li>
+<li><a href="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-function-composition-20dfb109a1a0#.i84zm53fb">What is Function Composition?</a></li>
+<li><a href="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0#.jddz30xy3">What is Functional Programming?</a></li>
+<li><a href="https://medium.com/@agm1984/an-overview-of-functional-programming-in-javascript-and-react-part-one-10d75b509e9e">Functional Programming Pattern in React and Redux</a> - unidirectional data flow and immutability (same input, same output every time. no side effects).</li>
+<li><a href="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261#.aa7ubggsy">What is a Promise?</a></li>
+<li><a href="https://medium.com/javascript-scene/master-the-javascript-interview-soft-skills-a8a5fb02c466">Soft Skills</a></li>
+<li><a href="https://medium.freecodecamp.org/10-common-data-structures-explained-with-videos-exercises-aaff6c06fb2b">Common Data Structures</a></li>
+<li>Google&rsquo;s Livebook: <a href="https://landing.google.com/sre/sre-book/toc/index.html">Site Reliability Engineering</a></li>
+<li><a href="https://hackernoon.com/how-to-refactor-unwieldy-untestable-code-4a73d75cb80a">How to refactor code to be more testable</a></li>
+<li>Steve Armstrong&rsquo;s <a href="https://tech.smartling.com/wake-up-tomorrow-and-start-using-es6-universal-language-f8380442816e">article about ES6</a></li>
+<li><a href="https://xiaoyunyang.github.io/post/lets-get-productive-with-javascript/">Let&rsquo;s get productive with JavaScript</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://aarzho.github.io/tags/javascript/">JavaScript</a>
+
+  <a class="tag tag--primary tag--small" href="https://aarzho.github.io/tags/guide/">Guide</a>
+
+  <a class="tag tag--primary tag--small" href="https://aarzho.github.io/tags/programming/">Programming</a>
+
+                  </div>
+                
+              
+            
+            
+  <div class="post-actions-wrap">
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://aarzho.github.io/post/leveraging-upstart-for-user-jobs/" data-tooltip="Leveraging Upstart for User Jobs">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://aarzho.github.io/post/data-structure-with-javascript-object-linked-list/" data-tooltip="Data Structure with JavaScript Object: Linked List">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://aarzho.github.io/post/cribsheet-for-javascript-coding-interview/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://aarzho.github.io/post/cribsheet-for-javascript-coding-interview/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://aarzho.github.io/post/cribsheet-for-javascript-coding-interview/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+            
+              
+                <div id="disqus_thread"></div>
+<script>
+
+
+
+
+var disqus_config = function () {
+this.page.url = "https://aarzho.github.io/post/cribsheet-for-javascript-coding-interview/";  
+this.page.identifier = "Cribsheet for JavaScript Coding Interview"; 
+};
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://https-aarzho-github-io-post.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2020 Aaron Zhou. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+  <div class="post-actions-wrap">
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://aarzho.github.io/post/leveraging-upstart-for-user-jobs/" data-tooltip="Leveraging Upstart for User Jobs">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://aarzho.github.io/post/data-structure-with-javascript-object-linked-list/" data-tooltip="Data Structure with JavaScript Object: Linked List">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://aarzho.github.io/post/cribsheet-for-javascript-coding-interview/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://aarzho.github.io/post/cribsheet-for-javascript-coding-interview/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://aarzho.github.io/post/cribsheet-for-javascript-coding-interview/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Faarzho.github.io%2Fpost%2Fcribsheet-for-javascript-coding-interview%2F">
+          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Faarzho.github.io%2Fpost%2Fcribsheet-for-javascript-coding-interview%2F">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Faarzho.github.io%2Fpost%2Fcribsheet-for-javascript-coding-interview%2F">
+          <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://aarzho.github.io/images/aaronzhou.jpg" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Aaron Zhou</h4>
+    
+      <div id="about-card-bio">Firmware Enginner, Ph.D in Controls Engineering, Senior IEEE Member.</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Firmware Engineer
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Bay Area
+      </div>
+    
+  </div>
+</div>
+
+    <div id="algolia-search-modal" class="modal-container">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="close-button"><i class="fa fa-close"></i></span>
+      <a href="https://algolia.com" target="_blank" rel="noopener" class="searchby-algolia text-color-light link-unstyled">
+        <span class="searchby-algolia-text text-color-light text-small">by</span>
+        <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+      </a>
+      <i class="search-icon fa fa-search"></i>
+      <form id="algolia-search-form">
+        <input type="text" id="algolia-search-input" name="search"
+          class="form-control input--large search-input" placeholder="Search" />
+      </form>
+    </div>
+    <div class="modal-body">
+      <div class="no-result text-color-light text-center">no post found</div>
+      <div class="results">
+        
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/my-daily-tools-for-embedded-systems-development/">
+                <h3 class="media-heading">My Daily Tools for Embedded Systems Development</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Mar 3, 2020
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/my-unconventional-way-to-become-an-embedded-software-engineer/">
+                <h3 class="media-heading">My Unconventional Way to Become an Embedded Software Engineer</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jan 1, 2020
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/leveraging-upstart-for-user-jobs/">
+                <h3 class="media-heading">Leveraging Upstart for User Jobs</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jan 1, 2020
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/beyond-minimum-viable-product-a-lesson-on-building-production-ready-software/">
+                <h3 class="media-heading">Beyond Minimum Viable Product: A Lesson on Building Production-ready Software</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Aug 8, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>What I learned working at a mature startup that&rsquo;s building new things but also has a ton of customers and products in production.</p>
+<p>This post is a WIP.</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/effective-unit-testing-of-react-components-with-jest-and-enzyme/">
+                <h3 class="media-heading">Effective Unit Testing of React Components With Jest And Enzyme</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Aug 8, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>The purpose of this article is to (1) provide a high level discussion of testing and (2) offer some practical examples and best practice for writing automated unit tests for React Application using Jest and Enzyme.</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/the-algorithm-for-managing-stress/">
+                <h3 class="media-heading">The Algorithm for Managing Stress</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jul 7, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>What is stress? Stress is your subconscious telling you that you have sh*t to do. Feeling stressed about your health? Go to the gym everyday. Feeling stressed about your financial situation? Get a more high paying job. If only things were that simple. In this post, I&rsquo;m going to teach you how to get rid your stress by understanding where your stress is coming from, then come up with an action plan and execute actions to address the source of your stress. This is not another &ldquo;top 10 things you can do to &hellip;.&rdquo; article. I will be discussing specific algorithms and heuristics with roots in computer science and mathematics that can be followed for every step of your journey to eliminating the source of your stress.</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/leveraging-upstart-for-user-jobs/">
+                <h3 class="media-heading">Leveraging Upstart for User Jobs</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jan 1, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Ubuntu and Upstart A while back Ubuntu switched from the classic bash script disaster know as SysV to upstart. I won&rsquo;t even get started on how terrible SysV was, but it was pretty bad as it was all shell scripts, no dependencies, no events, no parallelization, no integrated process monitoring, cgroups, etc.
+I&rsquo;ve used systemd before both in Fedora and embedded systems based around openembedded and loved it. It seems more natural and powerful then upstart.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/cribsheet-for-javascript-coding-interview/">
+                <h3 class="media-heading">Cribsheet for JavaScript Coding Interview</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Oct 10, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>The coding interviews / coding challenges are designed to assess how productive someone can be with the language. In contrast to the algorithm whiteboarding interview, which assesses how the candidate go about solving a problem, or the architecture design interview, which assesses how the candidate&rsquo;s experience in system engineering and product design, the coding interview is is utilized by the company interviewing you to answer one question:</p>
+<blockquote>
+<p>Can you be productive with JavaScript?</p>
+</blockquote></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/data-structure-with-javascript-object-linked-list/">
+                <h3 class="media-heading">Data Structure with JavaScript Object: Linked List</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  May 5, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>Linked list is like an array but more flexible. Elements in an array are stored contiguously in memory while linked lists are stored as nodes with two fields: current value and a pointer to the next thing in the list. We are going to implement linked list in JavaScript and go over some algorithms with the linked list.</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/algos-to-practice-whiteboarding-for-the-coding-interview/">
+                <h3 class="media-heading">Algos to Practice Whiteboarding for The Coding Interview</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  May 5, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>We are going to go over a set of coding and whiteboard problems that would be asked during a coding interview. I&rsquo;m drawing these problems from <a href="https://leetcode.com/">LeetCode</a> and <a href="https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=pd_lpo_sbs_14_t_0?_encoding=UTF8&amp;psc=1&amp;refRID=2E72V7DJM4CV4DNTBTKD">Cracking the Coding Interview</a>. They are a sample of the medium and hard problems that require a bit of thinking and and familiarity with some fundamental data structures in computer science.</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+      </div>
+    </div>
+    <div class="modal-footer">
+      <p class="results-count text-medium"
+         data-message-zero="no post found"
+         data-message-one="1 post found"
+         data-message-other="{n} posts found">
+         16 posts found
+      </p>
+    </div>
+  </div>
+</div>
+    
+  
+    
+    <div id="cover" style="background-image:url('https://aarzho.github.io/images/cover-blue.jpg');"></div>
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://aarzho.github.io/js/script-qi9wbxp2ya2j6p7wx1i6tgavftewndznf4v0hy2gvivk1rxgc3lm7njqb6bz.min.js"></script>
+
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/languages/go.min.js"></script>
+  
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/languages/typescript.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/aarzho.github.io\/post\/cribsheet-for-javascript-coding-interview\/';
+          
+            this.page.identifier = '\/post\/cribsheet-for-javascript-coding-interview\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'http-aarzho-github-io';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+    
+  </body>
+</html>
+

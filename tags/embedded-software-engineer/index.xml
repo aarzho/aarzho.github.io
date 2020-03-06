@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Embedded Software Engineer on Aaron Zhou</title>
+    <link>https://aarzho.github.io/tags/embedded-software-engineer/</link>
+    <description>Recent content in Embedded Software Engineer on Aaron Zhou</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>aarzho@gmail.com (Aaron Zhou)</managingEditor>
+    <webMaster>aarzho@gmail.com (Aaron Zhou)</webMaster>
+    <lastBuildDate>Thu, 05 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://aarzho.github.io/tags/embedded-software-engineer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My Daily Tools for Embedded Systems Development</title>
+      <link>https://aarzho.github.io/post/my-daily-tools-for-embedded-systems-development/</link>
+      <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
+      <author>aarzho@gmail.com (Aaron Zhou)</author>
+      <guid>https://aarzho.github.io/post/my-daily-tools-for-embedded-systems-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>My Unconventional Way to Become an Embedded Software Engineer</title>
+      <link>https://aarzho.github.io/post/my-unconventional-way-to-become-an-embedded-software-engineer/</link>
+      <pubDate>Wed, 29 Jan 2020 23:28:25 -0800</pubDate>
+      <author>aarzho@gmail.com (Aaron Zhou)</author>
+      <guid>https://aarzho.github.io/post/my-unconventional-way-to-become-an-embedded-software-engineer/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

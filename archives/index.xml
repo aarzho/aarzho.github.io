@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Archives on Aaron Zhou</title>
+    <link>https://aarzho.github.io/archives/</link>
+    <description>Recent content in Archives on Aaron Zhou</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>aarzho@gmail.com (Aaron Zhou)</managingEditor>
+    <webMaster>aarzho@gmail.com (Aaron Zhou)</webMaster>
+    
+	<atom:link href="https://aarzho.github.io/archives/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

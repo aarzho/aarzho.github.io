@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://aarzho.github.io/</loc>
+    <lastmod>2020-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/categories/blog/</loc>
+    <lastmod>2020-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/categories/</loc>
+    <lastmod>2020-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/categories/category/</loc>
+    <lastmod>2020-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/tags/embedded-software-engineer/</loc>
+    <lastmod>2020-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/tags/firmware/</loc>
+    <lastmod>2020-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/post/my-daily-tools-for-embedded-systems-development/</loc>
+    <lastmod>2020-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/post/</loc>
+    <lastmod>2020-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/tags/</loc>
+    <lastmod>2020-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/tags/tools/</loc>
+    <lastmod>2020-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/post/my-unconventional-way-to-become-an-embedded-software-engineer/</loc>
+    <lastmod>2020-01-29T23:28:25-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/post/leveraging-upstart-for-user-jobs/</loc>
+    <lastmod>2020-01-29T23:21:28-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/categories/subcategory/</loc>
+    <lastmod>2020-01-29T23:21:28-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/tags/tag1/</loc>
+    <lastmod>2020-01-29T23:21:28-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/tags/tag2/</loc>
+    <lastmod>2020-01-29T23:21:28-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/post/beyond-minimum-viable-product-a-lesson-on-building-production-ready-software/</loc>
+    <lastmod>2019-08-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/tags/guide/</loc>
+    <lastmod>2019-08-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/tags/javascript/</loc>
+    <lastmod>2019-08-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/tags/software-design/</loc>
+    <lastmod>2019-08-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/tags/typescript/</loc>
+    <lastmod>2019-08-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/post/effective-unit-testing-of-react-components-with-jest-and-enzyme/</loc>
+    <lastmod>2019-08-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/tags/programming/</loc>
+    <lastmod>2019-08-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/tags/life/</loc>
+    <lastmod>2019-07-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/tags/productivity/</loc>
+    <lastmod>2019-07-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/post/the-algorithm-for-managing-stress/</loc>
+    <lastmod>2019-07-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/post/leveraging-upstart-for-user-jobs/</loc>
+    <lastmod>2019-01-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/tags/linux/</loc>
+    <lastmod>2019-01-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/tags/open-source/</loc>
+    <lastmod>2019-01-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/tags/ubuntu/</loc>
+    <lastmod>2019-01-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/post/cribsheet-for-javascript-coding-interview/</loc>
+    <lastmod>2018-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/post/data-structure-with-javascript-object-linked-list/</loc>
+    <lastmod>2018-05-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/post/algos-to-practice-whiteboarding-for-the-coding-interview/</loc>
+    <lastmod>2018-05-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/tags/career/</loc>
+    <lastmod>2018-05-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/tags/frontend/</loc>
+    <lastmod>2018-05-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/categories/projects/</loc>
+    <lastmod>2018-05-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/tags/react/</loc>
+    <lastmod>2018-05-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/post/single-page-application-for-work/</loc>
+    <lastmod>2018-05-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/tags/ux/</loc>
+    <lastmod>2018-05-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/tags/web-dev/</loc>
+    <lastmod>2018-05-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/post/the-coding-interview-what-to-expect/</loc>
+    <lastmod>2018-05-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/post/a-career-transition-guide-for-overachievers/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/post/everything-you-need-to-know-about-git/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/post/using-hugo-to-build-a-personal-brand-website/</loc>
+    <lastmod>2018-04-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/post/why-i-pay-to-work-at-a-co-working-space/</loc>
+    <lastmod>2018-04-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://aarzho.github.io/archives/</loc>
+  </url>
+  
+</urlset>

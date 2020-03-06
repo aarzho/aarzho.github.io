@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Life on Aaron Zhou</title>
+    <link>https://aarzho.github.io/tags/life/</link>
+    <description>Recent content in Life on Aaron Zhou</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>aarzho@gmail.com (Aaron Zhou)</managingEditor>
+    <webMaster>aarzho@gmail.com (Aaron Zhou)</webMaster>
+    <lastBuildDate>Tue, 16 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://aarzho.github.io/tags/life/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Algorithm for Managing Stress</title>
+      <link>https://aarzho.github.io/post/the-algorithm-for-managing-stress/</link>
+      <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
+      <author>aarzho@gmail.com (Aaron Zhou)</author>
+      <guid>https://aarzho.github.io/post/the-algorithm-for-managing-stress/</guid>
+      <description>&lt;p&gt;What is stress? Stress is your subconscious telling you that you have sh*t to do. Feeling stressed about your health? Go to the gym everyday. Feeling stressed about your financial situation? Get a more high paying job. If only things were that simple. In this post, I&amp;rsquo;m going to teach you how to get rid your stress by understanding where your stress is coming from, then come up with an action plan and execute actions to address the source of your stress. This is not another &amp;ldquo;top 10 things you can do to &amp;hellip;.&amp;rdquo; article. I will be discussing specific algorithms and heuristics with roots in computer science and mathematics that can be followed for every step of your journey to eliminating the source of your stress.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Why I Pay to Work At a Co-working Space</title>
+      <link>https://aarzho.github.io/post/why-i-pay-to-work-at-a-co-working-space/</link>
+      <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
+      <author>aarzho@gmail.com (Aaron Zhou)</author>
+      <guid>https://aarzho.github.io/post/why-i-pay-to-work-at-a-co-working-space/</guid>
+      <description>&lt;p&gt;If you asked me to give you three facts about myself, I would tell you (1) I&amp;rsquo;m a evening and weekend entrepreneur, (2) when I start working on something I enjoy, I can&amp;rsquo;t put it down, and (3) I love coffee. This a formula for disaster because I have a full time job that I have to show up to by 9AM and I&amp;rsquo;m a normal human person who needs at least 6 hours of sleep.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

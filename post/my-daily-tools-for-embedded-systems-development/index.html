@@ -1,0 +1,954 @@
+
+
+  
+    
+  
+
+
+  
+
+
+
+
+
+  
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Hugo 0.63.2 with theme Tranquilpeak 0.4.3-BETA">
+    <title>My Daily Tools for Embedded Systems Development</title>
+    <meta name="author" content="Aaron Zhou">
+    <meta name="keywords" content="tech">
+
+    <link rel="icon" href="https://aarzho.github.io/favicon-96x96.png">
+    
+
+    
+    <meta name="description" content="">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="My Daily Tools for Embedded Systems Development">
+    <meta property="og:url" content="https://aarzho.github.io/post/my-daily-tools-for-embedded-systems-development/">
+    <meta property="og:site_name" content="Aaron Zhou">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Aaron Zhou">
+    <meta name="twitter:description" content="">
+    
+    
+
+    
+    
+
+    
+      <meta property="og:image" content="https://aarzho.github.io/post/images/embedded-firmware-design-new.png">
+    
+    
+    
+
+    
+      <meta property="og:image" content="https://aarzho.github.io/images/aaronzhou.jpg">
+    
+
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://aarzho.github.io/css/style-jsjn0006wyhpyzivf6yceb31gvpjatbcs3qzjvlumobfnugccvobqwxnnaj8.min.css" />
+    
+    
+      
+        <link rel="stylesheet"  href="https://aarzho.github.io/css/custom.css">
+      
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://aarzho.github.io/">Aaron Zhou</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://aarzho.github.io/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://aarzho.github.io/images/aaronzhou.jpg" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://aarzho.github.io/#about">
+          <img class="sidebar-profile-picture" src="https://aarzho.github.io/images/aaronzhou.jpg" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Aaron Zhou</h4>
+        
+          <h5 class="sidebar-profile-bio">Firmware Enginner, Ph.D in Controls Engineering, Senior IEEE Member.</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+     
+      <a class="sidebar-button-link " href="https://aarzho.github.io/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+     
+      <a class="sidebar-button-link " href="https://aarzho.github.io/categories/projects">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-code"></i>
+      
+      <span class="sidebar-button-desc">Projects</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+     
+      <a class="sidebar-button-link " href="https://aarzho.github.io/categories/blog">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-pencil"></i>
+      
+      <span class="sidebar-button-desc">Blog</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+     
+      <a class="sidebar-button-link " href="https://aarzho.github.io/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+     
+      <a class="sidebar-button-link " href="https://aarzho.github.io/about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-user"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+     
+      <a class="sidebar-button-link " href="https://github.com/aarzho" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+     
+      <a class="sidebar-button-link " href="https://www.linkedin.com/in/aaron-zhou-5887b58/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-linkedin"></i>
+      
+      <span class="sidebar-button-desc">Linkedin</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+     
+     <a class="sidebar-button-link " href="mailto:aarzho@gmail.com" rel="noopener">
+     
+      <i class="sidebar-button-icon fa fa-lg fa-envelope"></i>
+      
+      <span class="sidebar-button-desc">Email Me</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      My Daily Tools for Embedded Systems Development
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2020-03-05T00:00:00Z">
+        
+  March 5, 2020
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://aarzho.github.io/categories/category">category</a>, 
+    
+      <a class="category-link" href="https://aarzho.github.io/categories/blog">blog</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <h1 id="my-daily-tools-for-embedded-systems-development">My Daily Tools for Embedded Systems Development</h1>
+<p>In this blog, I am  focusing on the essential tools that engineers working with embedded systems should be using. These tools will allow engineers to consistently produce,  analyze, improve, test, and deploy software for embedded systems. personally,  I have tried and used most of the tools in the daily base.</p>
+<h3 id="1-integrated-development-environment-ide">1. Integrated Development Environment (IDE)</h3>
+<p><img src="https://aarzho.github.io/post/images/IDEs.png" alt=""></p>
+<p>An Integrated Development Environment, or IDE, is available as a single piece of software, but it&rsquo;s actually several important software development tools combined into one. An IDE contains all of the most important tools that are necessary for embedded software development. While IDEs vary in their features and benefits, they all contain at least three common elements: a code editor, a debugger and a compiler. Below are the IDEs that I used:</p>
+<ul>
+<li>
+<p><strong>IAR Embedded Workbench</strong></p>
+</li>
+<li>
+<p><strong>Eclipse</strong></p>
+</li>
+<li>
+<p><strong>CodeWarrior</strong></p>
+</li>
+<li>
+<p><strong>MPLAB</strong></p>
+</li>
+<li>
+<p><strong>Code Composer Studio</strong></p>
+</li>
+<li>
+<p><strong>Keil MDK</strong></p>
+</li>
+<li>
+<p><strong>HighTec Development Platform</strong></p>
+</li>
+<li>
+<p><strong>Vivado Design Suite</strong></p>
+</li>
+<li>
+<p><strong>Arduino</strong></p>
+</li>
+<li>
+<p><strong>PyCharm</strong></p>
+</li>
+</ul>
+<h3 id="2-code-analysis-tools">2. Code Analysis Tools</h3>
+<p>Code analyses are a collective term which includes analysis such as searching the source code text or the model for patterns matching known faults or compliance with modelling or coding guidelines. There is a lot of commercial tools that can automatically identify issues through static code review analysis. The user can get notified on security issues, code coverage, code duplication, and code complexity in every commit and pull request, directly from your current workflow. below are a few of them that I have tried:</p>
+<p><img src="https://aarzho.github.io/post/images/analysis.png" alt=""></p>
+<ul>
+<li>
+<p><strong>C-STAT, C-RUN (IAR Workbench)</strong></p>
+</li>
+<li>
+<p><strong>LDRA</strong></p>
+</li>
+<li>
+<p><strong>Parasoft</strong></p>
+</li>
+<li>
+<p><strong>Klocwork (now a Rogue Wave Company)</strong></p>
+</li>
+<li>
+<p><strong>Coverity</strong></p>
+</li>
+</ul>
+<h3 id="3-debugger-tools">3. Debugger Tools</h3>
+<p>Mistakes are bound to happen, even for programmers and engineers who program and test embedded systems. Embedded systems developers should prioritize selecting hardware components with features that support debugging.</p>
+<p><img src="https://aarzho.github.io/post/images/LogicA.png" alt=""></p>
+<p>Some of the third-party tools are listed below:</p>
+<ul>
+<li>
+<p><strong>Digital Oscilloscope</strong></p>
+</li>
+<li>
+<p><strong>Logic Analyzer</strong></p>
+</li>
+<li>
+<p><strong>In Circuit Emulator</strong></p>
+</li>
+<li>
+<p><strong>Real-time Tracer</strong></p>
+</li>
+</ul>
+<h3 id="4-simulations-tools">4. Simulations Tools</h3>
+<p>When engineers don&rsquo;t have real hardware available, or they need to be sure that a piece of hardware can execute a program within its memory and other constraints, a simulator is used.</p>
+<p>Developers can simulate their hardware setup, input from sensors and input from the human user interface to determine whether their code generates the correct output. Some of the popular tools are listed below:</p>
+<p><img src="https://aarzho.github.io/post/images/RTDS.png" alt=""></p>
+<ul>
+<li>
+<p><strong>Matlab (Model-in-the-Loop, Software-in-the-Loop, Power-in-the-Loop, X-in-the-Loop)</strong></p>
+</li>
+<li>
+<p><strong>LabVIEW Real-Time (National Instruments)</strong></p>
+</li>
+<li>
+<p><strong>Real Time Digital Simulator (RTDS)</strong></p>
+</li>
+<li>
+<p><strong>Altair (HyperWorks)</strong></p>
+</li>
+</ul>
+<h3 id="5-testing-tools">5. Testing Tools</h3>
+<p>Embedded developers often have access to hardware-based embedded software testing tools that are generally not used in app development and the testing of applications.</p>
+<p>Below is the list of popular embedded software testing tools that I have tried before.</p>
+<p><img src="https://aarzho.github.io/post/images/eggplant.png" alt=""></p>
+<ul>
+<li>
+<p><strong>Parasoft</strong></p>
+</li>
+<li>
+<p><strong>TestPlant</strong></p>
+</li>
+<li>
+<p><strong>Tessy</strong></p>
+</li>
+<li>
+<p><strong>Vector Software</strong></p>
+</li>
+<li>
+<p><strong>ATM (Automatic Test Manager)</strong></p>
+</li>
+<li>
+<p><strong>Polarion (Test Management)</strong></p>
+</li>
+</ul>
+<h3 id="6-bug-and-issue-tracking-tools">6. Bug and Issue Tracking Tools</h3>
+<p>As a popular saying goes &ldquo;Better is the bug tracking tool, better the quality of the product&rdquo;, a bug and issue tracking tools will help the team trace and knockdown the bugs and issues continuously. Here is the list of top bug tracking tools that I have used:</p>
+<p><img src="https://aarzho.github.io/post/images/JIRA.png" alt=""></p>
+<ul>
+<li>
+<p><strong>Bugzilla</strong></p>
+</li>
+<li>
+<p><strong>Asana</strong></p>
+</li>
+<li>
+<p><strong>JIRA</strong></p>
+</li>
+<li>
+<p><strong>BackLog</strong></p>
+</li>
+</ul>
+<h3 id="7-other-tools">7. Other Tools</h3>
+<p>Programmers that are developing embedded systems always need more tools. Below are the tools that I have used periodically in additional to the tools above.</p>
+<p><img src="https://aarzho.github.io/post/images/Polarion.png" alt=""></p>
+<ul>
+<li>
+<p><strong>VSPD (Virtual Serial Port)</strong></p>
+</li>
+<li>
+<p><strong>Putty (Console)</strong></p>
+</li>
+<li>
+<p><strong>Beyond (Code Comparison)</strong></p>
+</li>
+<li>
+<p><strong>Notepad++</strong></p>
+</li>
+<li>
+<p><strong>Lucid Chart (Flow chart)</strong></p>
+</li>
+<li>
+<p><strong>QFSM (State Machine)</strong></p>
+</li>
+<li>
+<p><strong>Beagle I2C/SPI (Protocol Analyzer)</strong></p>
+</li>
+<li>
+<p><strong>Wireshark (Communication)</strong></p>
+</li>
+<li>
+<p><strong>Doxygen (Documentation)</strong></p>
+</li>
+<li>
+<p><strong>GIT( Version Control)</strong></p>
+</li>
+<li>
+<p><strong>Agile (Agile Release)</strong></p>
+</li>
+<li>
+<p><strong>Polarion (Requirement Management)</strong></p>
+</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>If you&rsquo;re developing a product with embedded systems, you&rsquo;ll need most of the tools listed here more or less.</p>
+<p>Need more information? Have questions to ask? Feel free to comment. Thanks for watching.</p>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://aarzho.github.io/tags/embedded-software-engineer/">Embedded Software Engineer</a>
+
+  <a class="tag tag--primary tag--small" href="https://aarzho.github.io/tags/firmware/">Firmware</a>
+
+  <a class="tag tag--primary tag--small" href="https://aarzho.github.io/tags/tools/">Tools</a>
+
+                  </div>
+                
+              
+            
+            
+  <div class="post-actions-wrap">
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://aarzho.github.io/post/my-unconventional-way-to-become-an-embedded-software-engineer/" data-tooltip="My Unconventional Way to Become an Embedded Software Engineer">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://aarzho.github.io/post/my-daily-tools-for-embedded-systems-development/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://aarzho.github.io/post/my-daily-tools-for-embedded-systems-development/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://aarzho.github.io/post/my-daily-tools-for-embedded-systems-development/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+            
+              
+                <div id="disqus_thread"></div>
+<script>
+
+
+
+
+var disqus_config = function () {
+this.page.url = "https://aarzho.github.io/post/my-daily-tools-for-embedded-systems-development/";  
+this.page.identifier = "My Daily Tools for Embedded Systems Development"; 
+};
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://https-aarzho-github-io-post.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2020 Aaron Zhou. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+  <div class="post-actions-wrap">
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://aarzho.github.io/post/my-unconventional-way-to-become-an-embedded-software-engineer/" data-tooltip="My Unconventional Way to Become an Embedded Software Engineer">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://aarzho.github.io/post/my-daily-tools-for-embedded-systems-development/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://aarzho.github.io/post/my-daily-tools-for-embedded-systems-development/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://aarzho.github.io/post/my-daily-tools-for-embedded-systems-development/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Faarzho.github.io%2Fpost%2Fmy-daily-tools-for-embedded-systems-development%2F">
+          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Faarzho.github.io%2Fpost%2Fmy-daily-tools-for-embedded-systems-development%2F">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Faarzho.github.io%2Fpost%2Fmy-daily-tools-for-embedded-systems-development%2F">
+          <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://aarzho.github.io/images/aaronzhou.jpg" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Aaron Zhou</h4>
+    
+      <div id="about-card-bio">Firmware Enginner, Ph.D in Controls Engineering, Senior IEEE Member.</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Firmware Engineer
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Bay Area
+      </div>
+    
+  </div>
+</div>
+
+    <div id="algolia-search-modal" class="modal-container">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="close-button"><i class="fa fa-close"></i></span>
+      <a href="https://algolia.com" target="_blank" rel="noopener" class="searchby-algolia text-color-light link-unstyled">
+        <span class="searchby-algolia-text text-color-light text-small">by</span>
+        <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+      </a>
+      <i class="search-icon fa fa-search"></i>
+      <form id="algolia-search-form">
+        <input type="text" id="algolia-search-input" name="search"
+          class="form-control input--large search-input" placeholder="Search" />
+      </form>
+    </div>
+    <div class="modal-body">
+      <div class="no-result text-color-light text-center">no post found</div>
+      <div class="results">
+        
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/my-daily-tools-for-embedded-systems-development/">
+                <h3 class="media-heading">My Daily Tools for Embedded Systems Development</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Mar 3, 2020
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/my-unconventional-way-to-become-an-embedded-software-engineer/">
+                <h3 class="media-heading">My Unconventional Way to Become an Embedded Software Engineer</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jan 1, 2020
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/leveraging-upstart-for-user-jobs/">
+                <h3 class="media-heading">Leveraging Upstart for User Jobs</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jan 1, 2020
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/beyond-minimum-viable-product-a-lesson-on-building-production-ready-software/">
+                <h3 class="media-heading">Beyond Minimum Viable Product: A Lesson on Building Production-ready Software</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Aug 8, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>What I learned working at a mature startup that&rsquo;s building new things but also has a ton of customers and products in production.</p>
+<p>This post is a WIP.</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/effective-unit-testing-of-react-components-with-jest-and-enzyme/">
+                <h3 class="media-heading">Effective Unit Testing of React Components With Jest And Enzyme</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Aug 8, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>The purpose of this article is to (1) provide a high level discussion of testing and (2) offer some practical examples and best practice for writing automated unit tests for React Application using Jest and Enzyme.</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/the-algorithm-for-managing-stress/">
+                <h3 class="media-heading">The Algorithm for Managing Stress</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jul 7, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>What is stress? Stress is your subconscious telling you that you have sh*t to do. Feeling stressed about your health? Go to the gym everyday. Feeling stressed about your financial situation? Get a more high paying job. If only things were that simple. In this post, I&rsquo;m going to teach you how to get rid your stress by understanding where your stress is coming from, then come up with an action plan and execute actions to address the source of your stress. This is not another &ldquo;top 10 things you can do to &hellip;.&rdquo; article. I will be discussing specific algorithms and heuristics with roots in computer science and mathematics that can be followed for every step of your journey to eliminating the source of your stress.</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/leveraging-upstart-for-user-jobs/">
+                <h3 class="media-heading">Leveraging Upstart for User Jobs</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jan 1, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Ubuntu and Upstart A while back Ubuntu switched from the classic bash script disaster know as SysV to upstart. I won&rsquo;t even get started on how terrible SysV was, but it was pretty bad as it was all shell scripts, no dependencies, no events, no parallelization, no integrated process monitoring, cgroups, etc.
+I&rsquo;ve used systemd before both in Fedora and embedded systems based around openembedded and loved it. It seems more natural and powerful then upstart.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/cribsheet-for-javascript-coding-interview/">
+                <h3 class="media-heading">Cribsheet for JavaScript Coding Interview</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Oct 10, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>The coding interviews / coding challenges are designed to assess how productive someone can be with the language. In contrast to the algorithm whiteboarding interview, which assesses how the candidate go about solving a problem, or the architecture design interview, which assesses how the candidate&rsquo;s experience in system engineering and product design, the coding interview is is utilized by the company interviewing you to answer one question:</p>
+<blockquote>
+<p>Can you be productive with JavaScript?</p>
+</blockquote></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/data-structure-with-javascript-object-linked-list/">
+                <h3 class="media-heading">Data Structure with JavaScript Object: Linked List</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  May 5, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>Linked list is like an array but more flexible. Elements in an array are stored contiguously in memory while linked lists are stored as nodes with two fields: current value and a pointer to the next thing in the list. We are going to implement linked list in JavaScript and go over some algorithms with the linked list.</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/algos-to-practice-whiteboarding-for-the-coding-interview/">
+                <h3 class="media-heading">Algos to Practice Whiteboarding for The Coding Interview</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  May 5, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>We are going to go over a set of coding and whiteboard problems that would be asked during a coding interview. I&rsquo;m drawing these problems from <a href="https://leetcode.com/">LeetCode</a> and <a href="https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=pd_lpo_sbs_14_t_0?_encoding=UTF8&amp;psc=1&amp;refRID=2E72V7DJM4CV4DNTBTKD">Cracking the Coding Interview</a>. They are a sample of the medium and hard problems that require a bit of thinking and and familiarity with some fundamental data structures in computer science.</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+      </div>
+    </div>
+    <div class="modal-footer">
+      <p class="results-count text-medium"
+         data-message-zero="no post found"
+         data-message-one="1 post found"
+         data-message-other="{n} posts found">
+         16 posts found
+      </p>
+    </div>
+  </div>
+</div>
+    
+  
+    
+    <div id="cover" style="background-image:url('https://aarzho.github.io/images/cover-blue.jpg');"></div>
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://aarzho.github.io/js/script-qi9wbxp2ya2j6p7wx1i6tgavftewndznf4v0hy2gvivk1rxgc3lm7njqb6bz.min.js"></script>
+
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/languages/go.min.js"></script>
+  
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/languages/typescript.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/aarzho.github.io\/post\/my-daily-tools-for-embedded-systems-development\/';
+          
+            this.page.identifier = '\/post\/my-daily-tools-for-embedded-systems-development\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'http-aarzho-github-io';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+    
+  </body>
+</html>
+

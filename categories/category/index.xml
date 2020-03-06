@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>category on Aaron Zhou</title>
+    <link>https://aarzho.github.io/categories/category/</link>
+    <description>Recent content in category on Aaron Zhou</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>aarzho@gmail.com (Aaron Zhou)</managingEditor>
+    <webMaster>aarzho@gmail.com (Aaron Zhou)</webMaster>
+    <lastBuildDate>Thu, 05 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://aarzho.github.io/categories/category/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My Daily Tools for Embedded Systems Development</title>
+      <link>https://aarzho.github.io/post/my-daily-tools-for-embedded-systems-development/</link>
+      <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
+      <author>aarzho@gmail.com (Aaron Zhou)</author>
+      <guid>https://aarzho.github.io/post/my-daily-tools-for-embedded-systems-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>My Unconventional Way to Become an Embedded Software Engineer</title>
+      <link>https://aarzho.github.io/post/my-unconventional-way-to-become-an-embedded-software-engineer/</link>
+      <pubDate>Wed, 29 Jan 2020 23:28:25 -0800</pubDate>
+      <author>aarzho@gmail.com (Aaron Zhou)</author>
+      <guid>https://aarzho.github.io/post/my-unconventional-way-to-become-an-embedded-software-engineer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Leveraging Upstart for User Jobs</title>
+      <link>https://aarzho.github.io/post/leveraging-upstart-for-user-jobs/</link>
+      <pubDate>Wed, 29 Jan 2020 23:21:28 -0800</pubDate>
+      <author>aarzho@gmail.com (Aaron Zhou)</author>
+      <guid>https://aarzho.github.io/post/leveraging-upstart-for-user-jobs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://aarzho.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>aarzho@gmail.com (Aaron Zhou)</author>
+      <guid>https://aarzho.github.io/about/</guid>
+      <description>Hi There! Nice to meet you!
+Allow me to introduce myself a little bit. My name is Aaron Zhou. I&amp;rsquo;m a seasoned embedded software engineer living in San Francisco Bay Area. I have a full time job at a startup. In my spare time I like to contribute to open source software and blog.
+I have a Ph.D. in Electrical and Computer Engineering with a focus on Embedded Control. I&amp;rsquo;m also the senior member of Institute of Electrical and Electronics Engineers (IEEE).</description>
+    </item>
+    
+  </channel>
+</rss>

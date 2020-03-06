@@ -1,0 +1,910 @@
+
+
+  
+    
+  
+
+
+  
+
+
+
+
+
+  
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Hugo 0.63.2 with theme Tranquilpeak 0.4.3-BETA">
+    <title>The Coding Interview: What to Expect</title>
+    <meta name="author" content="Aaron Zhou">
+    <meta name="keywords" content="computer science, interview prep, algorithms, data structure, productivity, guide">
+
+    <link rel="icon" href="https://aarzho.github.io/favicon-96x96.png">
+    
+
+    
+    <meta name="description" content="Being great at coding interviews doesn&rsquo;t necessarily make you a great developer and being a great developer doesn&rsquo;t necessarily make you great at interviews. However, you need to pass the interview to get the job. Most tech companies, public or startups, have started drawing from the same pool of interview material, adopted the same set of coding challenges and problems for candidates to solve. Coding interviews can be challenging and stressful, but with enough practice, research, and preparation, it can be very manageable.">
+    <meta property="og:description" content="Being great at coding interviews doesn&rsquo;t necessarily make you a great developer and being a great developer doesn&rsquo;t necessarily make you great at interviews. However, you need to pass the interview to get the job. Most tech companies, public or startups, have started drawing from the same pool of interview material, adopted the same set of coding challenges and problems for candidates to solve. Coding interviews can be challenging and stressful, but with enough practice, research, and preparation, it can be very manageable.">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="The Coding Interview: What to Expect">
+    <meta property="og:url" content="https://aarzho.github.io/post/the-coding-interview-what-to-expect/">
+    <meta property="og:site_name" content="Aaron Zhou">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Aaron Zhou">
+    <meta name="twitter:description" content="Being great at coding interviews doesn&rsquo;t necessarily make you a great developer and being a great developer doesn&rsquo;t necessarily make you great at interviews. However, you need to pass the interview to get the job. Most tech companies, public or startups, have started drawing from the same pool of interview material, adopted the same set of coding challenges and problems for candidates to solve. Coding interviews can be challenging and stressful, but with enough practice, research, and preparation, it can be very manageable.">
+    
+    
+
+    
+    
+
+    
+      <meta property="og:image" content="https://aarzho.github.io/post/images/CTCI.png">
+    
+    
+    
+
+    
+      <meta property="og:image" content="https://aarzho.github.io/images/aaronzhou.jpg">
+    
+
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://aarzho.github.io/css/style-jsjn0006wyhpyzivf6yceb31gvpjatbcs3qzjvlumobfnugccvobqwxnnaj8.min.css" />
+    
+    
+      
+        <link rel="stylesheet"  href="https://aarzho.github.io/css/custom.css">
+      
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://aarzho.github.io/">Aaron Zhou</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://aarzho.github.io/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://aarzho.github.io/images/aaronzhou.jpg" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://aarzho.github.io/#about">
+          <img class="sidebar-profile-picture" src="https://aarzho.github.io/images/aaronzhou.jpg" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Aaron Zhou</h4>
+        
+          <h5 class="sidebar-profile-bio">Firmware Enginner, Ph.D in Controls Engineering, Senior IEEE Member.</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+     
+      <a class="sidebar-button-link " href="https://aarzho.github.io/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+     
+      <a class="sidebar-button-link " href="https://aarzho.github.io/categories/projects">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-code"></i>
+      
+      <span class="sidebar-button-desc">Projects</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+     
+      <a class="sidebar-button-link " href="https://aarzho.github.io/categories/blog">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-pencil"></i>
+      
+      <span class="sidebar-button-desc">Blog</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+     
+      <a class="sidebar-button-link " href="https://aarzho.github.io/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+     
+      <a class="sidebar-button-link " href="https://aarzho.github.io/about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-user"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+     
+      <a class="sidebar-button-link " href="https://github.com/aarzho" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+     
+      <a class="sidebar-button-link " href="https://www.linkedin.com/in/aaron-zhou-5887b58/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-linkedin"></i>
+      
+      <span class="sidebar-button-desc">Linkedin</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+     
+     <a class="sidebar-button-link " href="mailto:aarzho@gmail.com" rel="noopener">
+     
+      <i class="sidebar-button-icon fa fa-lg fa-envelope"></i>
+      
+      <span class="sidebar-button-desc">Email Me</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      The Coding Interview: What to Expect
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2018-05-07T00:00:00Z">
+        
+  May 7, 2018
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://aarzho.github.io/categories/blog">blog</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>Being great at coding interviews doesn&rsquo;t necessarily make you a great developer and being a great developer doesn&rsquo;t necessarily make you great at interviews. However, you need to pass the interview to get the job. Most tech companies, public or startups, have started drawing from the same pool of interview material, adopted the same set of coding challenges and problems for candidates to solve. Coding interviews can be challenging and stressful, but with enough practice, research, and preparation, it can be very manageable.</p>
+<div class="alert info ">
+  <p>This is a Live Document. I will be updating it often.</p>
+</div>
+<!-- raw HTML omitted -->
+<h1 id="advice">Advice</h1>
+<p>To understand the process, difficulty, and best way to prepare for a coding interviews at a top tech company, I talked to people I know who interviewed with and got hired by Facebook and Dropbox. I talked to a few recruiters, including one from Facebook, about the interview process and how to prepare for the phone screen and onsite. Additionally, I reviewed various articles people have written about their coding interview prep:</p>
+<ul>
+<li><a href="https://medium.freecodecamp.org/software-engineering-interviews-744380f4f2af">Andyy Hope&rsquo;s Journey</a></li>
+<li>[Xiaohan Zeng&rsquo;s journey]
+(<a href="https://medium.com/@XiaohanZeng/i-interviewed-at-five-top-companies-in-silicon-valley-in-five-days-and-luckily-got-five-job-offers-25178cf74e0f">https://medium.com/@XiaohanZeng/i-interviewed-at-five-top-companies-in-silicon-valley-in-five-days-and-luckily-got-five-job-offers-25178cf74e0f</a>)</li>
+<li><a href="https://medium.com/@MatttLloyd/my-thoughtworks-interview-or-how-i-stopped-worrying-and-learnt-to-love-the-interview-9cfdb5ee6217">Matt Lloyd&rsquo;s journey</a></li>
+<li><a href="https://medium.freecodecamp.org/how-i-landed-offers-from-microsoft-amazon-and-twitter-without-an-ivy-league-degree-d62cfe286eb8">Zhia Hwa Chong&rsquo;s Journey</a></li>
+<li>A series of <a href="https://www.youtube.com/watch?v=ZgdS0EUmn70">vlogs on YouTube</a> by an ex-Facebooker on how the interview process at Facebook or most high tech companies works and how to prepare for each interview.</li>
+<li><a href="https://blog.stephanbehnke.com/how-i-learned-to-stop-worrying-and-love-the-job-hunt-in-toronto/">Stephan Behnke&rsquo;s Guide</a></li>
+<li><a href="https://medium.freecodecamp.org/coding-interviews-for-dummies-5e048933b82b">Yangshun Tay&rsquo;s Guide</a></li>
+<li><a href="https://quip.com/q41AA3OmoZbC">TripleBytes&rsquo; Guide</a></li>
+<li><a href="https://codeburst.io/the-2-types-of-software-engineering-interviews-and-how-to-prepare-for-them-2e7bd4daa0b">Connor Leech&rsquo;s Guide</a></li>
+<li><a href="https://medium.freecodecamp.org/why-i-studied-full-time-for-8-months-for-a-google-interview-cc662ce9bb13">Googley as Heck</a></li>
+</ul>
+<p>The advice I got for interviewing at Facebook and Google include:</p>
+<ul>
+<li>
+<p>Know your Computer Science 101 really well. The Facebook recruiter told me to study from <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.471.4772&amp;rep=rep1&amp;type=pdf">The Algorithms Design Manual</a>. This book has interview problems and programming challenges.</p>
+</li>
+<li>
+<p>Interviews are very difficult and require more preparation than even a difficult computer science exam at a top university. You don&rsquo;t get partial credits. If you don&rsquo;t provide the correct solution at any stage of the interview, they will decline you immediately.</p>
+</li>
+<li>
+<p>There&rsquo;s a phone screen involving coding with a time limit, usually 45 minutes. If your code doesn&rsquo;t work or doesn&rsquo;t handle edge cases, you fail to meet their minimum standard and you won&rsquo;t go on to the onsite interview.</p>
+</li>
+<li>
+<p>For the phone interview, Facebook uses <a href="https://coderpad.io/">coderpad.io</a> and ask you to write an answer to a problem they saw on <a href="https://leetcode.com/problemset/all/">leetcode</a>
+but they have the run code function turned off. <em>No reference material is allowed</em> So you need to know your syntax really well. For the frontend developer job, the recruiter told me you need to know ES6 really well. Be able to write ES6 on paper and expect that to work if you run it.</p>
+<blockquote>
+<p>Do <a href="https://leetcode.com/problemset/all/">leetcode</a> questions and make sure you know what the best answer is. It&rsquo;s the kind of thing where it&rsquo;s worth making note cards. Read the solutions on leetcode. Even if your code works, it doesn&rsquo;t mean it&rsquo;s the most efficient. You&rsquo;ll get points off for that.</p>
+</blockquote>
+</li>
+<li>
+<p>Phone interview lasts 45 minutes.  If they give you one easy problem then you must finish that one quickly and do another. If they give you medium or difficult you can use the whole time. They usually expect you to do two medium questions in 45 minutes. You want to be able to do any medium question in less than 20 minutes with no reference material. My friend was asked to solve the word split problem.</p>
+</li>
+<li>
+<p>Coding challenges are an additional step that they add sometimes before you get the onsite. Coding challenges can be a take home project, an online quiz, or an online code exercise. Nobody is watching you and you usually have a week to do it. Though once you start you may be timed.</p>
+</li>
+<li>
+<p>For the take-home project, sometimes they may ask you to submit to github. Make sure to adhere to good git practices, such as having a .gitignore for node_modules. A friend who did a take-home project got docked for pushing node_modules along with his project onto the github repo.</p>
+</li>
+<li>
+<p>Onsite coding is like the phone interview but on a whiteboard. You need to write the code that can compile on the whiteboard.</p>
+<blockquote>
+<p>They will type it up and it should work. It&rsquo;s pretty brutal.</p>
+</blockquote>
+</li>
+<li>
+<p>Prepare for system design questions like object oriented design questions. Design a game like hangman or snake at the command line is pretty popular.</p>
+</li>
+<li>
+<p>Startups are easier to interview at. Most decent public companies (Facebook, Google, Airbnb, Twitter, Amazon, Uber, Lyft) do basically the same thing.</p>
+</li>
+<li>
+<p>For interview prep, spend half your time on system design and half on coding.</p>
+</li>
+<li>
+<p>Practice whiteboard problem from <a href="https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=sr_1_1?ie=UTF8&amp;qid=1525587700&amp;sr=8-1&amp;keywords=cracking+the+coding+interview">Cracking the Coding Interview</a> (CTCI).</p>
+<blockquote>
+<p>If you don&rsquo;t have a copy of CTCI get one. I haven&rsquo;t really tried online coding challenges. I mostly practice on a white board with another engineer giving me a question from the book. Practice Practice Practice.</p>
+</blockquote>
+</li>
+<li>
+<p>For the phone interview, make sure to practice on <a href="https://coderpad.io/">coderpad.io</a>. A bunch of companies use it. It looks like repl, leetcode, and coderbyte. It doesn&rsquo;t give you autocompletion like an IDE will, but lets you execute the code that you run exactly as you write it.</p>
+</li>
+</ul>
+<h1 id="coding">Coding</h1>
+<p>Steps to prepare for the coding questions:</p>
+<ol>
+<li>Do all problems from <a href="https://leetcode.com/problemset/all/">leetcode</a>. Need to be able to solve all problems with no reference material and write code that runs and passes the test the first time you submit. What&rsquo;s most impressive about the CoderByte practice problems are that they are actually pretty hard and require you to be proficient in your Computer Science 101. CoderByte hosts a weekly coding challenge every Saturday.</li>
+</ol>
+<ul>
+<li>For easy questions, need to be able to do them in less than 15 minutes. For medium problems, need to do them within 20 minutes. For hard problems, need to do them within 45 minutes.</li>
+<li>Review the best solutions for each problem on leetcode.</li>
+</ul>
+<ol start="2">
+<li>Extra practice:</li>
+</ol>
+<ul>
+<li><a href="https://edabit.com/explore">Edabit</a> contains a bunch of coding challenges.</li>
+<li><a href="https://coderbyte.com/">CoderByte</a> provides a collection of coding challenges in various languages. For JavaScript CoderByte doesn&rsquo;t have that many hard Computer Science 101 questions. They are focused on knowledge-based problem solving in a specific language.</li>
+<li><a href="https://www.interviewbit.com/">InterviewBit</a> provides a gamified experience in preparing you with all aspects of the coding interview (Big-Oh, algorithm, and system design) with videos and tutorials and sample problems. It doesn&rsquo;t seem to have as many problems as CoderByte, but it has a peer mock interview feature. What&rsquo;s more, InterviewBit offers curated collections of interview questions as seem from <a href="https://www.interviewbit.com/google-interview-questions/">Google</a>, <a href="https://www.interviewbit.com/facebook-interview-questions/">Facebook</a>,<a href="https://www.interviewbit.com/amazon-interview-questions/">Amazon</a>, and <a href="https://www.interviewbit.com/microsoft-interview-questions/">Microsoft</a>.</li>
+</ul>
+<ol start="3">
+<li>Best answers for difficult problems:</li>
+</ol>
+<ul>
+<li><a href="https://careercup.com/page">CareerCup</a> has a bunch of coding questions.</li>
+</ul>
+<h1 id="whiteboarding-onsite">Whiteboarding (Onsite)</h1>
+<ol>
+<li><a href="https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=sr_1_1?ie=UTF8&amp;qid=1525587700&amp;sr=8-1&amp;keywords=cracking+the+coding+interview">Cracking the Coding Interview</a></li>
+</ol>
+<ul>
+<li>The book has solutions. They also have a github repo with solutions coded up in different languages.</li>
+<li><a href="https://github.com/careercup/CtCI-6th-Edition-JavaScript/tree/ec307944f9c824376ea36bf9d730b0b709b9a923">JavaScript Solutions</a> to chapters 1-10</li>
+</ul>
+<ol start="2">
+<li><a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.471.4772&amp;rep=rep1&amp;type=pdf">The Algorithms Design Manual</a></li>
+<li>Mock Interview: <a href="https://interviewing.io/">https://interviewing.io/</a>. They do mock interviews with real interviewers and if you do really well they&rsquo;ll invite you to do real interviews.</li>
+</ol>
+<p>So what CS stuff should you study and memorize before a technical interview at a * major tech company?</p>
+<ul>
+<li>Hash tables</li>
+<li>Linked lists</li>
+<li>Binary search trees</li>
+<li>Dynamic programming</li>
+<li>Breadth-first search, depth-first search</li>
+<li>Quicksort, merge sort</li>
+<li>2D arrays</li>
+<li>Dynamic arrays</li>
+<li>Big-O analysis</li>
+</ul>
+<p>To name a few. Those are just the really, really common ones.</p>
+<h1 id="behavioral-interview">Behavioral Interview</h1>
+<p>I started reading that cracking  the coding interview book and preparing for the interviews. One of the earlier chapters talk about behavior question you might expect, like <strong>Why Do You Want to Work Here?</strong> I composed a response for why I want to work at Facebook. In composing the response, I discovered what I’m really long for in a job: (1) inclusivity and cultivating ecosystems, (2) empowering regular people and developers with open source tools, (3) company is entrepreneurial and always taking risks. Facebook has been taking risks for years. Pushing limits all the time. People got over it and Facebook has more users than ever.</p>
+<p>Why do I want to work at Facebook? I want to help people. Regular people, users, consumers, and creators all benefit from Facebook’s products. Facebook empowers developers and people with ideas to implement and market their ideas. Inclusivity and ecosystem building are what Facebook is about they are very important to me. These goals give deeper meaning to hard work and I’m really motivated to work hard to achieve these goals. As an entrepreneur, I’ve benefited so much from Facebook’s software products like React and open auth, and Facebook’s platform lets me create a brand for a company that I didn’t have a website for. In fact, I’ve seen lots of freelancers and online personalities use facebook’s pages in lieu of having to build a website of their own. I’ve also benefited greatly from Facebook’s ad platform. I saw a coworking space as and that prompted me to investigate coworking spaces. I ended up signing up for one and that significantly boosted my productivity and General well being. I’ve also used Facebook to reach out to long lost friends and people I’ve met once at college, asked them for advice about things like how to get a job at Facebook.</p>
+<p>Facebook is the only big company I want to work at (maybe Google also) because it&rsquo;s kinda startupy. Facebook has an astounding collection of <a href="https://opensource.fb.com/">open source tools and libraries</a> that helps you build anything. I greatly admire a company who sees the value in making open sourcing a core mission statement and puts so much effort into developing and maintaining its open source projects. I would like to join a startup or work at my own startup if I get funding. Facebook is pretty chill about people leaving to start companies and eventually coming back. Many ex-Facebookers started successful companies like Quora and Asana.</p>
+<h1 id="system-design">System Design</h1>
+<ol>
+<li><a href="https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=sr_1_1?ie=UTF8&amp;qid=1525587700&amp;sr=8-1&amp;keywords=cracking+the+coding+interview">Cracking the Coding Interview</a></li>
+<li><a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.471.4772&amp;rep=rep1&amp;type=pdf">The Algorithms Design Manual</a></li>
+</ol>
+<h1 id="brainteasers">Brainteasers?</h1>
+<p>Laszlo Bock, senior vice president of People Operations at Google said:</p>
+<blockquote>
+<p>&ldquo;Some of these interview questions [brainteasers] have been and I’m sure continue to be used at the company. Sorry about that. We do everything we can to discourage this, and when our senior leaders—myself included—review applicants each week, we ignore the answers to these questions.&rdquo;</p>
+</blockquote>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://aarzho.github.io/tags/productivity/">Productivity</a>
+
+  <a class="tag tag--primary tag--small" href="https://aarzho.github.io/tags/guide/">Guide</a>
+
+  <a class="tag tag--primary tag--small" href="https://aarzho.github.io/tags/programming/">Programming</a>
+
+  <a class="tag tag--primary tag--small" href="https://aarzho.github.io/tags/career/">Career</a>
+
+                  </div>
+                
+              
+            
+            
+  <div class="post-actions-wrap">
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://aarzho.github.io/post/single-page-application-for-work/" data-tooltip="Single Page Application For Work">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://aarzho.github.io/post/a-career-transition-guide-for-overachievers/" data-tooltip="A Career Transition Guide For Overachievers">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://aarzho.github.io/post/the-coding-interview-what-to-expect/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://aarzho.github.io/post/the-coding-interview-what-to-expect/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://aarzho.github.io/post/the-coding-interview-what-to-expect/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+            
+              
+                <div id="disqus_thread"></div>
+<script>
+
+
+
+
+var disqus_config = function () {
+this.page.url = "https://aarzho.github.io/post/the-coding-interview-what-to-expect/";  
+this.page.identifier = "The Coding Interview: What to Expect"; 
+};
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://https-aarzho-github-io-post.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2020 Aaron Zhou. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+  <div class="post-actions-wrap">
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://aarzho.github.io/post/single-page-application-for-work/" data-tooltip="Single Page Application For Work">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://aarzho.github.io/post/a-career-transition-guide-for-overachievers/" data-tooltip="A Career Transition Guide For Overachievers">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://aarzho.github.io/post/the-coding-interview-what-to-expect/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://aarzho.github.io/post/the-coding-interview-what-to-expect/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://aarzho.github.io/post/the-coding-interview-what-to-expect/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Faarzho.github.io%2Fpost%2Fthe-coding-interview-what-to-expect%2F">
+          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Faarzho.github.io%2Fpost%2Fthe-coding-interview-what-to-expect%2F">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Faarzho.github.io%2Fpost%2Fthe-coding-interview-what-to-expect%2F">
+          <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://aarzho.github.io/images/aaronzhou.jpg" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Aaron Zhou</h4>
+    
+      <div id="about-card-bio">Firmware Enginner, Ph.D in Controls Engineering, Senior IEEE Member.</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Firmware Engineer
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Bay Area
+      </div>
+    
+  </div>
+</div>
+
+    <div id="algolia-search-modal" class="modal-container">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="close-button"><i class="fa fa-close"></i></span>
+      <a href="https://algolia.com" target="_blank" rel="noopener" class="searchby-algolia text-color-light link-unstyled">
+        <span class="searchby-algolia-text text-color-light text-small">by</span>
+        <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+      </a>
+      <i class="search-icon fa fa-search"></i>
+      <form id="algolia-search-form">
+        <input type="text" id="algolia-search-input" name="search"
+          class="form-control input--large search-input" placeholder="Search" />
+      </form>
+    </div>
+    <div class="modal-body">
+      <div class="no-result text-color-light text-center">no post found</div>
+      <div class="results">
+        
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/my-daily-tools-for-embedded-systems-development/">
+                <h3 class="media-heading">My Daily Tools for Embedded Systems Development</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Mar 3, 2020
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/my-unconventional-way-to-become-an-embedded-software-engineer/">
+                <h3 class="media-heading">My Unconventional Way to Become an Embedded Software Engineer</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jan 1, 2020
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/leveraging-upstart-for-user-jobs/">
+                <h3 class="media-heading">Leveraging Upstart for User Jobs</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jan 1, 2020
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/beyond-minimum-viable-product-a-lesson-on-building-production-ready-software/">
+                <h3 class="media-heading">Beyond Minimum Viable Product: A Lesson on Building Production-ready Software</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Aug 8, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>What I learned working at a mature startup that&rsquo;s building new things but also has a ton of customers and products in production.</p>
+<p>This post is a WIP.</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/effective-unit-testing-of-react-components-with-jest-and-enzyme/">
+                <h3 class="media-heading">Effective Unit Testing of React Components With Jest And Enzyme</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Aug 8, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>The purpose of this article is to (1) provide a high level discussion of testing and (2) offer some practical examples and best practice for writing automated unit tests for React Application using Jest and Enzyme.</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/the-algorithm-for-managing-stress/">
+                <h3 class="media-heading">The Algorithm for Managing Stress</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jul 7, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>What is stress? Stress is your subconscious telling you that you have sh*t to do. Feeling stressed about your health? Go to the gym everyday. Feeling stressed about your financial situation? Get a more high paying job. If only things were that simple. In this post, I&rsquo;m going to teach you how to get rid your stress by understanding where your stress is coming from, then come up with an action plan and execute actions to address the source of your stress. This is not another &ldquo;top 10 things you can do to &hellip;.&rdquo; article. I will be discussing specific algorithms and heuristics with roots in computer science and mathematics that can be followed for every step of your journey to eliminating the source of your stress.</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/leveraging-upstart-for-user-jobs/">
+                <h3 class="media-heading">Leveraging Upstart for User Jobs</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jan 1, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Ubuntu and Upstart A while back Ubuntu switched from the classic bash script disaster know as SysV to upstart. I won&rsquo;t even get started on how terrible SysV was, but it was pretty bad as it was all shell scripts, no dependencies, no events, no parallelization, no integrated process monitoring, cgroups, etc.
+I&rsquo;ve used systemd before both in Fedora and embedded systems based around openembedded and loved it. It seems more natural and powerful then upstart.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/cribsheet-for-javascript-coding-interview/">
+                <h3 class="media-heading">Cribsheet for JavaScript Coding Interview</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Oct 10, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>The coding interviews / coding challenges are designed to assess how productive someone can be with the language. In contrast to the algorithm whiteboarding interview, which assesses how the candidate go about solving a problem, or the architecture design interview, which assesses how the candidate&rsquo;s experience in system engineering and product design, the coding interview is is utilized by the company interviewing you to answer one question:</p>
+<blockquote>
+<p>Can you be productive with JavaScript?</p>
+</blockquote></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/data-structure-with-javascript-object-linked-list/">
+                <h3 class="media-heading">Data Structure with JavaScript Object: Linked List</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  May 5, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>Linked list is like an array but more flexible. Elements in an array are stored contiguously in memory while linked lists are stored as nodes with two fields: current value and a pointer to the next thing in the list. We are going to implement linked list in JavaScript and go over some algorithms with the linked list.</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://aarzho.github.io/post/algos-to-practice-whiteboarding-for-the-coding-interview/">
+                <h3 class="media-heading">Algos to Practice Whiteboarding for The Coding Interview</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  May 5, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>We are going to go over a set of coding and whiteboard problems that would be asked during a coding interview. I&rsquo;m drawing these problems from <a href="https://leetcode.com/">LeetCode</a> and <a href="https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=pd_lpo_sbs_14_t_0?_encoding=UTF8&amp;psc=1&amp;refRID=2E72V7DJM4CV4DNTBTKD">Cracking the Coding Interview</a>. They are a sample of the medium and hard problems that require a bit of thinking and and familiarity with some fundamental data structures in computer science.</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+      </div>
+    </div>
+    <div class="modal-footer">
+      <p class="results-count text-medium"
+         data-message-zero="no post found"
+         data-message-one="1 post found"
+         data-message-other="{n} posts found">
+         16 posts found
+      </p>
+    </div>
+  </div>
+</div>
+    
+  
+    
+    <div id="cover" style="background-image:url('https://aarzho.github.io/images/cover-blue.jpg');"></div>
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://aarzho.github.io/js/script-qi9wbxp2ya2j6p7wx1i6tgavftewndznf4v0hy2gvivk1rxgc3lm7njqb6bz.min.js"></script>
+
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/languages/go.min.js"></script>
+  
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/languages/typescript.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/aarzho.github.io\/post\/the-coding-interview-what-to-expect\/';
+          
+            this.page.identifier = '\/post\/the-coding-interview-what-to-expect\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'http-aarzho-github-io';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+    
+  </body>
+</html>
+
